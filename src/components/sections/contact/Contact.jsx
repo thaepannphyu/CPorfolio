@@ -2,7 +2,14 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="flex">
+      <div>
+        <img src="" alt="" />
+      </div>
+      <div>
+        <img src="" alt="" />
+      </div>
+    </div>
   )
 }
 
