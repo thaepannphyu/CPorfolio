@@ -17,14 +17,14 @@ const ProjectsShow = () => {
       id: 1,
       name: "Contact Web Design",
       img: image1,
-      demo: "https://edu-pro-dashboard2.netlify.app",
+      demo: "https://contact-web1.netlify.app",
       git: "https://github.com/khinezinthin/Contact-web",
     },
     {
       id: 2,
       name: "Frontend Web Design",
       img: image2,
-      demo: "https://edu-pro-dashboard2.netlify.app",
+      demo: "https://eduvide.netlify.app",
       git: "https://github.com/khinezinthin/Edu-Pro",
     },
     {
@@ -38,14 +38,14 @@ const ProjectsShow = () => {
       id: 4,
       name: "Contact Web Design",
       img: image1,
-      demo: "https://edu-pro-dashboard2.netlify.app",
+      demo: "https://contact-web1.netlify.app",
       git: "https://github.com/khinezinthin/Contact-web",
     },
     {
       id: 5,
       name: "Frontend Web Design",
       img: image2,
-      demo: "https://edu-pro-dashboard2.netlify.app",
+      demo: "https://eduvide.netlify.app",
       git: "https://github.com/khinezinthin/Edu-Pro",
     },
     {
