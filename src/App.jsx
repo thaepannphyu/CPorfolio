@@ -17,7 +17,7 @@ const App = () => {
       </section>
 
       <section>
-        <ProjectShow/>
+        {/* <ProjectShow/> */}
       </section>
 
       <section>

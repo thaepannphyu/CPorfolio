@@ -1,4 +1,4 @@
-.form{
+.form1{
     position: relative;
     width: 20rem;
     height: 3rem;
@@ -11,6 +11,26 @@
     height: 8rem;
 
 }
+
+@media screen and (max-width: 370px) {
+    .form1{
+        width: 15rem; 
+    }
+
+    .form2{
+        width: 15rem; 
+    }
+  }
+
+  @media screen and (max-width: 295px) {
+    .form1{
+        width: 100%; 
+    }
+
+    .form2{
+        width: 100%; 
+    }
+  }
 
 .input{
     position: absolute;
@@ -73,11 +93,12 @@
     height: 0%;
     background-color: #fff;
     z-index: -1;
-    transition: 0.8s;
+    transition: 1s;
 }
 
 .btn1:hover{
     color: #292923;
+    transition: 0.1s;
 }
 
 .btn1::before{
@@ -87,4 +108,44 @@
 
 .btn1:hover::before{
     height: 180%;
+}
+
+.box{
+    position: absolute;
+    top: 56%;
+    right: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.box span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    margin: -1px;
+    animation: animate 2s infinite;
+}
+
+.box span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px) ;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px) ;
+    }
 }
