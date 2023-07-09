@@ -20,7 +20,7 @@ const App = () => {
         <ProjectShow/>
       </section>
 
-      <section>
+      <section className=' my-5'>
         <Skill/>
       </section>
 
