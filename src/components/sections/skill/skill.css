@@ -1,0 +1,31 @@
+.back-shadow1 {
+    filter: drop-shadow(0 0 2px #ff8800);
+  }
+  .back-shadow2 {
+    filter: drop-shadow(0 0 2px #002fff);
+  }
+  .back-shadow3 {
+    filter: drop-shadow(0 0 2px #ff00d4);
+  }
+  .back-shadow4 {
+    filter: drop-shadow(0 0 2px #ffe600);
+  }
+  .back-shadow5 {
+    filter: drop-shadow(0 0 2px #8400ff);
+  }
+  .back-shadow6 {
+    filter: drop-shadow(0 0 2px #0011ff);
+  }
+  .back-shadow7 {
+    filter: drop-shadow(0 0 2px #8400ff);
+  }
+  .back-shadow8 {
+    filter: drop-shadow(0 0 2px #00a2ff);
+  }
+  .back-shadow9 {
+    filter: drop-shadow(0 0 2px #272625);
+  }
+  .back-shadow10 {
+    filter: drop-shadow(0 0 2px #008cff);
+  }
+
