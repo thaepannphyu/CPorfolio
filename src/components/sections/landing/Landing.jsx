@@ -11,6 +11,7 @@ import { useState } from "react";
 import { Modal, Group, Button } from "@mantine/core";
 import resume from "../../../assets/resume.pdf";
 const Landing = () => {
+
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
   const el = useRef();
   useEffect(() => {
@@ -152,6 +153,7 @@ const Landing = () => {
       </Modal>
     </>
   );
+
 };
 
 export default Landing;
