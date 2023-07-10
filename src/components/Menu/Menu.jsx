@@ -84,7 +84,7 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={` absolute md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] inner`}>
+                    className={` absolute top-[19%] left-[68%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner innerS`}>
                     Home
                   </p>
                 </div>
@@ -105,7 +105,7 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={` absolute  md:top-[-64%] md:left-[-17%] lg:top-[-64%] lg:left-[-17%] inner`}>
+                    className={` absolute top-[-70%] left-[4px] md:top-[-64%] md:left-[-17%] lg:top-[-64%] lg:left-[-17%] md:inner lg:inner innerS`}>
                     Contact
                   </p>
                 </div>
@@ -126,7 +126,7 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={`  absolute top-[27%] left-[-71%] md:top-[27%] md:left-[-71%] lg:top-[27%] lg:left-[-71%] inner`}>
+                    className={`  absolute top-[27%] left-[-100%] md:top-[27%] md:left-[-71%] lg:top-[27%] lg:left-[-71%] md:inner lg:inner innerS`}>
                     skill
                   </p>
                 </div>
@@ -147,7 +147,7 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={` absolute top-[100%] left-[-30%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] inner`}>
+                    className={` absolute top-[16%] left-[-154%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
                     Projects
                   </p>
                 </div>
@@ -161,3 +161,4 @@ const Menu = () => {
 };
 
 export default Menu;
+
