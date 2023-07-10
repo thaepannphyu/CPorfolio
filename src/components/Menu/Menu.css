@@ -1,0 +1,26 @@
+.liS {
+  left: -20px;
+  top: 40%;
+
+  transition: 1s;
+  transform-origin: 100px;
+  transform: rotate(0deg) translateX(100px);
+}
+
+.li {
+  transform-origin: 100px;
+  transition: 1s;
+  left: -2px;
+  top: 41%;
+
+  transform: rotate(calc(360deg / 4 * var(--i)));
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.inner {
+  transition: 1s;
+  transform: rotate(calc(-360deg / 4 * var(--i)));
+}
+.active {
+  background-color: aqua;
+}

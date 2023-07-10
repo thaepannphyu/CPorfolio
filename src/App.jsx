@@ -1,36 +1,37 @@
-import './App.css'
-import React from 'react'
-import Navbar from "./components/navbar/Navbar"
-import Landing from "./components/sections/landing/Landing"
-import ProjectShow from "./components/sections/projectShow/ProjectsShow"
-import Skill from "./components/sections/skill/Skill"
-import Contact from "./components/sections/contact/Contact"
-import Footer from "./components/footer/Footer"
+import "./App.css";
+import React from "react";
+import Navbar from "./components/navbar/Navbar";
+import Landing from "./components/sections/landing/Landing";
+import ProjectShow from "./components/sections/projectShow/ProjectsShow";
+import Skill from "./components/sections/skill/Skill";
+import Contact from "./components/sections/contact/Contact";
+import Footer from "./components/footer/Footer";
+import Menu from "./Components/Menu/menu";
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-
-      <section>
-        <Landing/>
+    <div className=" relative">
+      {/* <Navbar/> */}
+      <Menu />
+      <section className=" relative">
+        <Landing />
       </section>
 
-      <section>
-        <ProjectShow/>
+      <section className=" relative">
+        <ProjectShow />
       </section>
 
-      <section>
-        <Skill/>
+      <section className=" relative">
+        <Skill />
       </section>
 
-      <section>
-        <Contact/>
+      <section className=" relative">
+        <Contact />
       </section>
 
-      <Footer/>
+      <Footer className=" relative" />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
