@@ -21,11 +21,8 @@ const App = () => {
         <ProjectShow />
       </section>
 
-
-
-      <section className=' my-5 relative'>
-        <Skill/>
-
+      <section className=" my-5 relative">
+        <Skill />
       </section>
 
       <section className=" relative">

@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .liS {
+    left: -20px;
+    top: 40%;
+    transition: 1s;
+    transform-origin: 100px;
+    transform: rotate(0deg) translateX(100px);
+  }
+  .li {
+    transform-origin: 100px;
+    transition: 1s;
+    left: -2px;
+    top: 41%;
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transition-delay: calc(0.1s * var(--i));
+  }
+  .inner {
+    transition: 1s;
+    transform: rotate(calc(-360deg / 4 * var(--i)));
+  }
+  .innerS {
+    transition: 1s;
+    transform: rotate(calc(-245deg / 4 * var(--i)));
+  }
+  .innerSpecify {
+    transition: 1s;
+    transform: rotate(0deg);
+  }
+  .liHalf {
+    transform-origin: 100px;
+    transition: 1s;
+    left: -2px;
+    top: 41%;
+    transform: rotate(calc(180deg / 3 * var(--i)));
+    transition-delay: calc(0.1s * var(--i));
+  }
+  .rotate {
+    transform-origin: 100px;
+    transform: rotate(269deg) translateY(-120px) translateX(21px);
+  }
+}
