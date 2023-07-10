@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import left from "../../../assets/contactPhoto/bg-left.jpg";
 import right from "../../../assets/contactPhoto/bg-right.jpg";
+import neonLeft from "../../../assets/contactPhoto/neon-left.jpg";
+import neonRight from "../../../assets/contactPhoto/neon-right.jpg";
 import laptop from "../../../assets/contactPhoto/ph-view.jpg";
 import "./contact.css";
 import { AiFillGithub } from "react-icons/ai";
@@ -15,14 +17,14 @@ const Contact = () => {
   return (
     <>
       {/* laptop view */}
-      <div className="flex w-[100%] relative bg-[#292923] max-[899px]:hidden">
+      <div className="flex w-[100%] relative bg-[rgba(15,15,15,0.3)] max-[899px]:hidden">
         {/* left side */}
         <div
           className={`${
             show ? "mr-[360px] duration-1000" : "mr-0 duration-700"
           } relative w-[50%]`}
         >
-          <img src={left} alt="" className=" h-[600px] w-full object-cover" />
+          <img src={neonLeft} alt="" className=" h-[600px] w-full" />
           <p
             className={`${
               show
@@ -157,7 +159,7 @@ const Contact = () => {
             show ? "ml-[360px] duration-1000" : "ml-0 duration-700"
           } relative w-[50%]`}
         >
-          <img src={right} alt="" className=" h-[600px] w-full object-cover" />
+          <img src={neonRight} alt="" className=" h-[600px] w-full" />
           <p
             className={`${
               show
@@ -169,7 +171,7 @@ const Contact = () => {
           </p>
           <button
             onClick={() => setShow(!show)}
-            className={`btn btn1 bg-transparent border-2 border-[#fff] text-gray-50 rounded-md font-bold font-sans absolute top-1/2 left-[-90px] z-10 px-8 py-3 ${
+            className={`btn btn1 box-shadow bg-transparent border-2 border-[#fff] text-gray-50 rounded-md font-bold font-sans absolute top-1/2 left-[-90px] z-10 px-8 py-3 ${
               show ? " opacity-0" : " delay-[600ms] opacity-100"
             }`}
           >
