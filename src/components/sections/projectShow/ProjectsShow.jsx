@@ -58,13 +58,13 @@ const ProjectsShow = () => {
   ];
   return (
     <>
-      <div className=" py-9 font-sans border">
+      <div className=" py-9 font-sans">
         {/* title */}
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className=" text-3xl font-bold tracking-wider">
             Recent <span className=" text-purple-700">Projects</span>
           </h1>
-          <p className=" w-[500px] text-center">
+          <p className=" w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
             doloremque voluptate excepturi porro sed totam quis animi dolorum
             rerum earum.
@@ -99,7 +99,7 @@ const ProjectsShow = () => {
                       <div className="card-body w-full relative cursor-pointer">
                         <img src={pj.img} alt="" className="" />
                         <div className="layer absolute ">
-                          <h1 className=" tracking-wide">{pj.name}</h1>
+                          <h1 className=" tracking-wide max-xl:whitespace-nowrap">{pj.name}</h1>
                           <div className="flex justify-center items-center gap-3">
                             <a
                               href={pj.demo}
