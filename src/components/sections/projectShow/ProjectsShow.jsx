@@ -8,6 +8,9 @@ import "swiper/css/pagination";
 import image1 from "../../../assets/pj-photo/pj-1.png";
 import image2 from "../../../assets/pj-photo/pj-2.png";
 import image3 from "../../../assets/pj-photo/pj-3.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -60,11 +63,14 @@ const ProjectsShow = () => {
     <>
       <div className=" py-9 font-sans">
         {/* title */}
-        <div className="flex flex-col justify-center items-center gap-3">
-          <h1 className=" text-3xl font-bold tracking-wider">
-            Recent <span className=" text-purple-700">Projects</span>
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="flex flex-col justify-center items-center gap-3">
+          <h1 className=" text-3xl font-bold tracking-wider text-[#00ffff]">
+            Recent <span className=" text-[#FFFF00]">Projects</span>
           </h1>
-          <p className=" w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
+          <p className=" text-pink-500 w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
             doloremque voluptate excepturi porro sed totam quis animi dolorum
             rerum earum.
@@ -75,7 +81,7 @@ const ProjectsShow = () => {
         <div className=" mt-3 mx-10">
           <Swiper
             slidesPerView={3}
-            spaceBetween={20}
+            spaceBetween={23}
             centeredSlides={true}
             grabCursor={true}
             loop={true}
@@ -95,7 +101,7 @@ const ProjectsShow = () => {
               return (
                 <div key={pj.id}>
                   <SwiperSlide>
-                    <div className="card p-2 w-[95%] bg-[#202020] rounded-md overflow-hidden">
+                    <div className="card w-[95%] rounded-md overflow-hidden">
                       <div className="card-body w-full relative cursor-pointer">
                         <img src={pj.img} alt="" className="" />
                         <div className="layer absolute ">
