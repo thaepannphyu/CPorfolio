@@ -61,16 +61,16 @@ const ProjectsShow = () => {
   ];
   return (
     <>
-      <div className=" py-9 font-sans">
+      <div className=" h-screen py-9 font-sans">
         {/* title */}
         <div
         data-aos="zoom-in"
         data-aos-duration="1000"
-        className="flex flex-col justify-center items-center gap-3">
+        className="flex flex-col justify-center items-center gap-3 mt-5">
           <h1 className=" text-3xl font-bold tracking-wider text-[#00ffff]">
             Recent <span className=" text-[#FFFF00]">Projects</span>
           </h1>
-          <p className=" text-pink-500 w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
+          <p className=" text-pink-500 mt-1 w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
             doloremque voluptate excepturi porro sed totam quis animi dolorum
             rerum earum.
@@ -78,13 +78,24 @@ const ProjectsShow = () => {
         </div>
 
         {/* swiper  */}
-        <div className=" mt-3 mx-10">
+        <div className=" mt-8 mx-10">
           <Swiper
             slidesPerView={3}
             spaceBetween={23}
             centeredSlides={true}
             grabCursor={true}
             loop={true}
+            breakpoints={{
+              240: {
+                slidesPerView: 1,
+              },
+              600: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 3,
+              },
+            }}
             // pagination={{
             //   clickable: true,
             // }}
@@ -95,7 +106,7 @@ const ProjectsShow = () => {
               disableOnInteraction: false,
             }}
             initialSlide={2}
-            className="mySwiper w-[100%] py-12 pl-5"
+            className="mySwiper w-[100%] py-12 pl-5 max-[600px]:pr-5 max-[600px]:pl-10 "
           >
             {pj.map((pj) => {
               return (
@@ -103,7 +114,7 @@ const ProjectsShow = () => {
                   <SwiperSlide>
                     <div className="card w-[95%] rounded-md overflow-hidden">
                       <div className="card-body w-full relative cursor-pointer">
-                        <img src={pj.img} alt="" className="" />
+                        <img src={pj.img} alt="" className=" " />
                         <div className="layer absolute ">
                           <h1 className=" tracking-wide max-xl:whitespace-nowrap">{pj.name}</h1>
                           <div className="flex justify-center items-center gap-3">

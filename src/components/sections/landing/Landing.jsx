@@ -41,12 +41,14 @@ const Landing = () => {
         id="myVideo"></video> */}
 
       <div className="bg-black overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
         <iframe
           className={` absolute top-0 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
+
         {/*  */}
         <div className=" container bgTransparent text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
@@ -55,6 +57,7 @@ const Landing = () => {
               data-aos-duration="1000"
               className=" p-4 overflow-hidden flex justify-center items-center flex-col">
               <div className=" h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
+
                 Hello! I am <strong className=" textname">SAKURA JUNG</strong>
                 <div className=" inline h1C">
                   <IoArrowUndoOutline className=" inline h1C" />

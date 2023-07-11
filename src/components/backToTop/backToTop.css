@@ -1,0 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
+.backToTop{
+    box-shadow: rgba(116, 245, 245, 0.616) 0px 0px 0.25em, rgba(96, 235, 228, 0.555) 0px 0.25em 1em;
+    color: aqua;
+    background-color: black;
+    transition: 1s;
+}
+
+.backToTop:hover{
+    background-color: rgba(30, 31, 31, 0.685);
+    color: aqua;
+}

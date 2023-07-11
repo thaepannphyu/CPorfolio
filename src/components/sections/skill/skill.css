@@ -29,3 +29,46 @@
     filter: drop-shadow(0 0 2px #008cff);
   }
 
+.card-transition{
+  transition: 1s;
+}
+
+.card-shadow1{
+  box-shadow: #d85314 0px 1px 0px, #d85314 0px 1px 0px inset;
+}
+
+.card-shadow2{
+  box-shadow: #2662ea 0px 1px 0px, #2662ea 0px 1px 0px inset;
+}
+
+.card-shadow3{
+  box-shadow: #ac2a69 0px 1px 0px, #ac2a69 0px 1px 0px inset;
+}
+
+.card-shadow4{
+  box-shadow: #facc15 0px 1px 0px, #facc15 0px 1px 0px inset;
+}
+
+.card-shadow5{
+  box-shadow: #a855f7 0px 1px 0px, #a855f7 0px 1px 0px inset;
+}
+
+.card-shadow6{
+  box-shadow: #403975 0px 1px 0px, #403975 0px 1px 0px inset;
+}
+
+.card-shadow7{
+  box-shadow: #7e22ce 0px 1px 0px, #7e22ce 0px 1px 0px inset;
+}
+
+.card-shadow8{
+  box-shadow: #3b82f6 0px 1px 0px, #3b82f6 0px 1px 0px inset;
+}
+
+.card-shadow9{
+  box-shadow: #1f2937 0px 1px 0px, #1f2937 0px 1px 0px inset;
+}
+
+.card-shadow10{
+  box-shadow: #2563eb 0px 1px 0px, #2563eb 0px 1px 0px inset;
+}
