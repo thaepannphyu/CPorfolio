@@ -10,7 +10,7 @@ import Menu from "./Components/Menu/menu";
 
 const App = () => {
   return (
-    <div className=" relative bg-gradient-to-r from-[#0d0855] via-[#441f5a] to-[#4a4d61] bg-opacity-10">
+    <div className=" relative ">
       {/* <Navbar/> */}
       <Menu />
       <section className=" relative">
@@ -21,7 +21,7 @@ const App = () => {
         <Skill/>
       </section>
 
-      <section className=' my-5 relative'>
+      <section className=' relative'>
         <ProjectShow />
       </section>
 

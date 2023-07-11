@@ -9,9 +9,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
+{/* bg-gradient-to-r from-[#0d0855] via-[#441f5a] to-[#4a4d61] bg-opacity-10 */}
 const Skill = () => {
   return (
-    <div className=" w-[90%] py-8 mx-auto font-sans bg-gradient-to-r from-[#0d0855] via-[#441f5a] to-[#4a4d61] bg-opacity-10">
+    <div className=" py-8 mx-auto font-sans bg-img1">
       <h1 className=" text-center text-white uppercase font-bold tracking-widest text-xl">
         Skills & Technologies
       </h1>

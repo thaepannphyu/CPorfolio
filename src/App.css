@@ -40,6 +40,14 @@ body {
     font-size: calc(0.5vw + 0.8rem);
   }
 }
+.bg-img1{
+  background-image: linear-gradient(to right bottom, #044b75, #06436b, #073c62, #073458, #062d4f, #112a4c, #182649, #1d2345, #2a2245, #352143, #3f1f40, #471e3c);
+  /* background-color: rgb(24, 23, 23); */
+}
+.bg-img2{
+  /* background-image: linear-gradient(to right bottom, #044b75, #06436b, #073c62, #073458, #062d4f, #112a4c, #182649, #1d2345, #2a2245, #352143, #3f1f40, #471e3c); */
+  background-color: rgb(46, 45, 45);
+}
 
 .bgTransparent {
   background-color: #ffffff14;

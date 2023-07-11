@@ -30,7 +30,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className=" h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+      <div className=" h-screen flex  justify-center items-center bg-img1 relative dark:bg-slate-50">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
