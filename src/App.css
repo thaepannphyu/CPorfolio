@@ -40,13 +40,9 @@ body {
     font-size: calc(0.5vw + 0.8rem);
   }
 }
-.bg-img1{
-  background-image: linear-gradient(to right bottom, #044b75, #06436b, #073c62, #073458, #062d4f, #112a4c, #182649, #1d2345, #2a2245, #352143, #3f1f40, #471e3c);
-  /* background-color: rgb(24, 23, 23); */
-}
-.bg-img2{
-  /* background-image: linear-gradient(to right bottom, #044b75, #06436b, #073c62, #073458, #062d4f, #112a4c, #182649, #1d2345, #2a2245, #352143, #3f1f40, #471e3c); */
-  background-color: rgb(46, 45, 45);
+.bg-img{
+  /* background-image: linear-gradient(to right bottom, #140c1d, #151124, #15162b, #141a32, #101e39, #14203d, #182141, #1d2345, #2a2245, #352143, #3f1f40, #471e3c); */
+  background-image: linear-gradient(to top, #140c1d, #1e1527, #2a1c30, #36243a, #432b43, #482d46, #4c2f4a, #51314d, #4e2e4c, #4b2c4a, #472949, #442748);
 }
 
 .bgTransparent {

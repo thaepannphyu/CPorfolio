@@ -12,7 +12,7 @@ AOS.init();
 {/* bg-gradient-to-r from-[#0d0855] via-[#441f5a] to-[#4a4d61] bg-opacity-10 */}
 const Skill = () => {
   return (
-    <div className=" py-8 mx-auto font-sans bg-img1">
+    <div className=" py-8 mx-auto font-sans">
       <h1 className=" text-center text-white uppercase font-bold tracking-widest text-xl">
         Skills & Technologies
       </h1>

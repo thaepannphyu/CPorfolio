@@ -61,7 +61,7 @@ const ProjectsShow = () => {
   ];
   return (
     <>
-      <div className=" h-screen py-9 font-sans bg-img1">
+      <div className=" h-screen py-9 font-sans">
         {/* title */}
         <div
         data-aos="zoom-in"
@@ -85,6 +85,17 @@ const ProjectsShow = () => {
             centeredSlides={true}
             grabCursor={true}
             loop={true}
+            breakpoints={{
+              240: {
+                slidesPerView: 1,
+              },
+              600: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 3,
+              },
+            }}
             // pagination={{
             //   clickable: true,
             // }}
@@ -95,7 +106,7 @@ const ProjectsShow = () => {
               disableOnInteraction: false,
             }}
             initialSlide={2}
-            className="mySwiper w-[100%] py-12 pl-5"
+            className="mySwiper w-[100%] py-12 pl-5 max-[600px]:pr-5 max-[600px]:pl-10 "
           >
             {pj.map((pj) => {
               return (
@@ -103,7 +114,7 @@ const ProjectsShow = () => {
                   <SwiperSlide>
                     <div className="card w-[95%] rounded-md overflow-hidden">
                       <div className="card-body w-full relative cursor-pointer">
-                        <img src={pj.img} alt="" className="" />
+                        <img src={pj.img} alt="" className=" " />
                         <div className="layer absolute ">
                           <h1 className=" tracking-wide max-xl:whitespace-nowrap">{pj.name}</h1>
                           <div className="flex justify-center items-center gap-3">

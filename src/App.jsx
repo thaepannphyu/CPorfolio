@@ -10,7 +10,7 @@ import Menu from "./Components/Menu/menu";
 
 const App = () => {
   return (
-    <div className=" relative ">
+    <div className=" relative bg-img">
       {/* <Navbar/> */}
       <Menu />
       <section className=" relative">
@@ -23,6 +23,7 @@ const App = () => {
 
       <section className=' relative'>
         <ProjectShow />
+
       </section>
 
       <section className=" relative">

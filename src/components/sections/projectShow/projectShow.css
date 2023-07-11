@@ -41,7 +41,11 @@
 .card{
     box-shadow: #00ffff 0px 2px 8px 0px;
 }
-
+@media screen and (max-width:600px) {
+    .card{
+        box-shadow: #00ffff 0px 2px 2px 0px;
+    }
+}
 .card:hover .layer{
     transform: scale(1);
 }
