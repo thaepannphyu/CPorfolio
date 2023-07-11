@@ -85,6 +85,17 @@ const ProjectsShow = () => {
             centeredSlides={true}
             grabCursor={true}
             loop={true}
+            breakpoints={{
+              240: {
+                slidesPerView: 1,
+              },
+              600: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 3,
+              },
+            }}
             // pagination={{
             //   clickable: true,
             // }}
