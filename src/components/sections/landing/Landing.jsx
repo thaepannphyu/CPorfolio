@@ -38,7 +38,7 @@ const Landing = () => {
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
         <div className=" container  text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
           <div className="w-full bgTransparent  md:w-1/2 lg:w-2/5 flex justify-center items-center">
-            <div className=" p-4">
+            <div className=" p-4 md:block lg:block flex justify-center  flex-col items-center">
               <div className=" h2C cursiveText ">
                 Hello! I am <strong className=" textname">SAKURA JUNG</strong>
                 <div className=" inline h1C">

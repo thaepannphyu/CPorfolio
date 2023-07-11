@@ -38,7 +38,7 @@ const Menu = () => {
     <Draggable
       axis="y"
       defaultPosition={
-        windowSize.width > 600 ? { x, y: 200 } : { x: xS, y: 10 }
+        windowSize.width > 600 ? { x, y: y * 0.5 } : { x: xS, y: y * 0.5 }
       }
       bounds={
         windowSize.width > 600
@@ -161,4 +161,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
