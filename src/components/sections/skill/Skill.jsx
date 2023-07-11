@@ -13,8 +13,11 @@ AOS.init();
 const Skill = () => {
   return (
     <div className=" py-8 mx-auto font-sans">
-      <h1 className=" text-center text-white uppercase font-bold tracking-widest text-xl">
-        Skills & Technologies
+      <h1
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+       className=" text-center text-white uppercase font-bold tracking-widest text-xl">
+        <span className="text-[#00ffff]">Skills</span> <span className="text-pink-500">& </span> <span className="text-[#e1f85b]">Technologies</span>
       </h1>
       {/* skills showcase  */}
       <div className=" w-full mt-5 flex flex-wrap gap-5 justify-center">
@@ -27,7 +30,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-orange-600 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <AiOutlineHtml5 />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-orange-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow1 card-transition flex flex-col gap-8 bgTransparent group-hover:bg-orange-600 group-hover:bg-opacity-30 px-4 py-4 rounded select-none">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow1">
                 HTML SKILL
@@ -58,7 +61,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-blue-600 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <TbBrandCss3 />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-blue-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow2 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-blue-600 group-hover:bg-opacity-30 px-4 py-4 rounded">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow2">
                 CSS SKILL
@@ -89,7 +92,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-pink-600 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <FaSass />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-pink-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow3 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-pink-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow3">
                 Sass SKILL
@@ -120,7 +123,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-yellow-400 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <BiLogoJavascript />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-yellow-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow4 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-yellow-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow4">
                 Javascript SKILL
@@ -151,7 +154,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-purple-500 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <FaBootstrap />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-purple-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow5 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-purple-600 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow5">
                 Bootstrap SKILL
@@ -182,7 +185,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-blue-700 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <FaReact />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-blue-800 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow10 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-blue-800 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow6">
                 React SKILL
@@ -213,7 +216,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-purple-700 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <SiRedux />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-purple-800 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow7 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-purple-800 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow7">
                 Redux SKILL
@@ -245,7 +248,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-blue-500 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <SiTailwindcss />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-blue-700 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow8 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-blue-700 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow8">
                 Tailwind SKILL
@@ -277,7 +280,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-gray-800 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <AiOutlineGithub />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-gray-900 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow9 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-gray-900 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow9">
                 Github SKILL
@@ -308,7 +311,7 @@ const Skill = () => {
           <h1 className=" html-icon text-[45px] text-blue-600 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
             <TbBrandVscode />
           </h1>
-          <div className=" flex flex-col gap-8 bg-slate-500 group-hover:bg-blue-700 group-hover:bg-opacity-30 px-4 py-4 rounded ">
+          <div className="card-shadow10 card-transition select-none flex flex-col gap-8 bgTransparent group-hover:bg-blue-700 group-hover:bg-opacity-30 px-4 py-4 rounded ">
             <p>
               <h1 className=" text-center font-bold text-[#ffffff] back-shadow10">
                 VS Code SKILL
