@@ -10,60 +10,88 @@ import { FaFilePdf } from "react-icons/fa";
 import { useState } from "react";
 import { Modal, Group, Button } from "@mantine/core";
 import resume from "../../../assets/resume.pdf";
+import Svg from "./svg";
+import cv from "../../../assets/cv.png";
 const Landing = () => {
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
   const el = useRef();
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        " Mollitia ipsam, commodi sed doloremque modi aliquid?",
+        ` <p className="pC">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>`,
+        ` <p className="pC">Qurrncard elit.</p>`,
       ],
       typeSpeed: 20,
+      backDelay: 700,
+      loop: true,
     });
     return () => {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
-
+  // https://www.youtube.com/watch?v=VvMVTH1yOjo
   return (
     <>
-      <div className=" h-screen flex justify-center items-center relative dark:bg-slate-50">
+      {/* <video
+        src="https://www.youtube.com/watch?v=VvMVTH1yOjo"
+        autoPlay
+        muted
+        loop
+        id="myVideo"></video> */}
+
+      <div className="bg-black overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
         <iframe
           className={` absolute top-0 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
-        <div className=" container  text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
-          <div className="w-full bgTransparent  md:w-1/2 lg:w-2/5 flex justify-center items-center">
-            <div className=" p-4 md:block lg:block flex justify-center  flex-col items-center">
-              <div className=" h2C cursiveText ">
+
+        {/*  */}
+        <div className=" container bgTransparent text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
+          <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className=" p-4 overflow-hidden flex justify-center items-center flex-col">
+              <div className=" h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
+
                 Hello! I am <strong className=" textname">SAKURA JUNG</strong>
                 <div className=" inline h1C">
-                  <IoArrowUndoOutline className=" inline rotate" />
+                  <IoArrowUndoOutline className=" inline h1C" />
                 </div>
               </div>
-              <div className=" h2C  "> A FrontEnd Website Developer</div>
-              <div className=" h-20">
-                <p className="pC mt-4 " ref={el}></p>
+              <div>
+                <div className=" h1C  md:svgMd svgsm hover:scale-110  transition2s lg:svg">
+                  <Svg />
+                </div>
               </div>
-              <div className=" flex justify-center">
+              <div className="flex justify-center">
+                <div className=" h-20">
+                  <p
+                    className=" pC mt-4 flex justify-center text-center "
+                    ref={el}></p>
+                </div>
+              </div>
+              {/* btn */}
+              <div className=" hover:scale-110 transition2s flex justify-center items-center animate__animated animate__rubberBand">
                 <div className="btn-L scale-[0.6] md:scale-75 lg:scale-100  gap-3 shadow bgTransparent">
                   <a
                     href="https://www.facebook.com/profile.php?id=100038518265438"
                     target="_blank">
-                    <SiFacebook className=" inline text-3xl text-blue-900 text-shadow" />
+                    <SiFacebook className="hover:scale-110 transition2s inline text-3xl text-blue-900 text-shadow" />
                   </a>
                   <div
+                    className=" hover:scale-110 transition2s"
                     onClick={() => {
                       setSlowTransitionOpened(true);
                     }}>
                     <FaFilePdf className=" inline text-3xl text-rose-400 text-shadow" />
                   </div>
                   <a href={resume} download>
-                    <div className=" btn-S bg-blue-900 inline px-5 py-3 rounded-3xl">
+                    <div className=" hover:text-black transition2s btn-S bg-violet-900 hover:bg-slate-500 inline px-5 py-3 rounded-3xl">
                       DownLoad CV
                     </div>
                   </a>
@@ -71,12 +99,15 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="w-full   bgTransparent flex justify-center flex-col md:w-1/2  lg:w-2/5  ">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="w-full md:w-1/2  lg:w-1/2  flex justify-center flex-col ">
             <div className=" flex h-full justify-center items-center relative w-full  overflow-hidden">
               <div className=" h-80 w-52 scale-[0.6] md:scale-75 lg:scale-100 flex rounded-lg relative">
-                <div className=" h-32 w-32 bg-green-200 rounded-[50%] absolute top-[-50px] left-[117px] "></div>
-                <div className="  h-36 w-36 bg-green-200  rounded-[50%] absolute bottom-[-43px] right-[104px]"></div>
-                <div className=" h-full  w-full bg-orange-200 z-[2] absolute left-0   bottom-0 rounded border-4">
+                <div className=" h-32 w-32 bg-violet-200 rounded-[50%] absolute top-[-50px] left-[117px] "></div>
+                <div className="  h-36 w-36 bg-blue-200  rounded-[50%] absolute bottom-[-43px] right-[104px]"></div>
+                <div className=" h-full  w-full bg-pink-200 z-[2] absolute left-0   bottom-0 rounded border-4">
                   <img
                     src={photo}
                     alt=""
@@ -85,12 +116,16 @@ const Landing = () => {
                 </div>
               </div>
               {/* bottom bar */}
-              <div className="btn-L justify-start ps-2 rounded-e-none scale-[0.6] md:scale-75 lg:scale-100  absolute bottom-[10%] md:bottom-[26%] right-[-10%] gap-3 shadow bgTransparent">
+              <div className="hover:scale-110 transition2s btn-L justify-start ps-2 rounded-e-none scale-[0.6] md:scale-75 lg:scale-100  absolute bottom-[10%] md:bottom-[26%] right-[-10%] gap-3 shadow bgTransparent">
                 <div className="h-[85%] w-11 bg-white overflow-hidden rounded-[50%]">
-                  <img src={review} alt="" className=" object-cover " />
+                  <img
+                    src={review}
+                    alt=""
+                    className="hover:scale-110 transition2s object-cover "
+                  />
                 </div>
                 {/* star */}
-                <div className="">
+                <div className="hover:scale-110 transition2s">
                   <div className="">
                     <div className="flex items-center space-x-1">
                       <svg
@@ -143,12 +178,15 @@ const Landing = () => {
         </div>
       </div>
       <Modal
-        size={"70%"}
+        size={"50%"}
         opened={slowTransitionOpened}
         withCloseButton={false}
         onClose={() => setSlowTransitionOpened(false)}
         transitionProps={{ transition: "scale" }}>
-        <iframe id="pdfFile" src={resume} frameborder="0"></iframe>
+        {/* <iframe id="pdfFile" src={resume} frameborder="0"></iframe> */}
+        <div className=" flex justify-center items-center">
+          <img src={cv} alt="" />
+        </div>
       </Modal>
     </>
   );

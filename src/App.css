@@ -23,7 +23,7 @@ body {
     font-size: calc(1vw + 1.4rem);
   }
   .h2C {
-    font-size: calc(1vw + 1.2rem);
+    font-size: calc(1vw + 1rem);
   }
   .pC {
     font-size: calc(0.5vw + 1rem);
@@ -34,7 +34,7 @@ body {
     font-size: calc(1vw + 1rem);
   }
   .h2C {
-    font-size: calc(0.5vw + 1rem);
+    font-size: calc(0.5vw + 0.9rem);
   }
   .pC {
     font-size: calc(0.5vw + 0.8rem);
