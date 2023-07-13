@@ -7,7 +7,7 @@ AOS.init();
 
 const Education = () => {
   return (
-    <div className=" font-sans w-[90%] mx-auto mb-20 flex flex-col md:flex-row lg:flex-row gap-[10%] ">
+    <div className=" h-screen font-sans w-[90%] mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%] ">
       <div
         data-aos="fade-up-right"
         data-aos-offset="300"

@@ -96,9 +96,9 @@ const ProjectsShow = () => {
                 slidesPerView: 3,
               },
             }}
-            pagination={{
-              clickable: true,
-            }}
+            // pagination={{
+            //   clickable: true,
+            // }}
             navigation={true}
             modules={[Pagination, Navigation, Autoplay]}
             autoplay={{

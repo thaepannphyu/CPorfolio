@@ -8,6 +8,7 @@ import Contact from "./components/sections/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Menu from "./Components/Menu/menu";
 import Education from "./components/sections/education/Education";
+import About from "./components/sections/about/About";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -52,7 +53,7 @@ const App = () => {
 
 
 
-    <div className=" relative bg-light">
+    <div className=" relative bg-[rgb(24,24,24)]">
 
 
 
@@ -63,6 +64,14 @@ const App = () => {
         <Landing />
       </section>
 
+      <section id="0" className=" relative">
+        <About />
+      </section>
+
+      <section className=" relative">
+        <Education />
+      </section>
+
       <section id="1" className=" relative">
         <Skill />
       </section>
@@ -71,16 +80,7 @@ const App = () => {
         <ProjectShow />
       </section>
 
-
-      <section className=" relative">
-
-        <Education />
-      </section>
-
-      
-
       <section id="3" className=" relative">
-
         <Contact />
       </section>
 
