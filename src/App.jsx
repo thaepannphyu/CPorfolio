@@ -53,7 +53,7 @@ const App = () => {
 
 
 
-    <div className=" relative bg-light">
+    <div className=" relative bg-[rgb(24,24,24)]">
 
 
 
@@ -68,6 +68,10 @@ const App = () => {
         <About />
       </section>
 
+      <section className=" relative">
+        <Education />
+      </section>
+
       <section id="1" className=" relative">
         <Skill />
       </section>
@@ -76,16 +80,7 @@ const App = () => {
         <ProjectShow />
       </section>
 
-
-      <section className=" relative">
-
-        <Education />
-      </section>
-
-      
-
       <section id="3" className=" relative">
-
         <Contact />
       </section>
 
