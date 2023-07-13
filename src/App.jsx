@@ -46,7 +46,11 @@ const App = () => {
 
 
   return (
-    <div className=" relative bg-img ">
+
+
+    <div className=" relative bg-[rgb(24,24,24)]">
+
+
       {/* <Navbar/> */}
       <Menu />
       <section className=" relative">
@@ -57,7 +61,9 @@ const App = () => {
         <Skill />
       </section>
 
+
       <section className=" relative">
+
         <ProjectShow />
       </section>
 

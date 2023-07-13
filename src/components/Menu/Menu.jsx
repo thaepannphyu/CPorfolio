@@ -55,13 +55,13 @@ const Menu = () => {
               toogle == true ? " activeT" : ""
             }  z-10 w-10 h-10 bg-black  transition-all shadow rounded-[50%] flex justify-center items-center`}>
             <AiOutlineMenu
-              className={`text-2xl  transition-all absolute ${
+              className={`lg:text-2xl md:text-lg  transition-all absolute ${
                 toogle == true ? " opacity-0" : ""
               } text-yellow-300`}
             />
 
             <AiOutlineClose
-              className={`text-2xl transition-all absolute ${
+              className={`lg:text-2xl md:text-lg transition-all absolute ${
                 toogle == false ? " opacity-0" : ""
               } text-yellow-300`}
             />

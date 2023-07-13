@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// import left from "../../../assets/contactPhoto/bg-left.jpg";
-// import right from "../../../assets/contactPhoto/bg-right.jpg";
+import left from "../../../assets/contactPhoto/bg-left.jpg";
+import right from "../../../assets/contactPhoto/bg-right.jpg";
 // import neonLeft from "../../../assets/contactPhoto/neon-left.jpg";
 // import neonRight from "../../../assets/contactPhoto/neon-right.jpg";
-import lightLeft from "../../../assets/contactPhoto/light-left.jpg";
-import lightRight from "../../../assets/contactPhoto/light-right.jpg";
+// import lightLeft from "../../../assets/contactPhoto/light-left.jpg";
+// import lightRight from "../../../assets/contactPhoto/light-right.jpg";
 import laptop from "../../../assets/contactPhoto/ph-view.jpg";
 import "./contact.css";
 import { AiFillGithub } from "react-icons/ai";
@@ -24,16 +24,14 @@ const Contact = () => {
         <div
           className={`${
             show ? "mr-[360px] duration-1000" : "mr-0 duration-700"
-          } relative w-[50%]`}
-        >
-          <img src={lightLeft} alt="" className=" h-[600px] w-full" />
+          } relative w-[50%]`}>
+          <img src={left} alt="" className=" h-[600px] w-full object-cover" />
           <p
             className={`${
               show
                 ? "opacity-0 left-[-1000px] top-1/4"
                 : "delay-[600ms] top-1/4 right-2 opacity-100"
-            } text-7xl font-extrabold font-sans text-white absolute z-10 max-xl:text-6xl max-lg:text-5xl max-md:text-4xl`}
-          >
+            } text-7xl font-extrabold font-sans text-white absolute z-10 max-xl:text-6xl max-lg:text-5xl max-md:text-4xl`}>
             Let's work
           </p>
 
@@ -43,8 +41,7 @@ const Contact = () => {
               show
                 ? "top-[120px] right-[-670px] opacity-100 duration-1000"
                 : "z-[-100] top-[-1000px] right-[-300px] opacity-0"
-            } flex gap-10 items-center justify-center absolute z-10`}
-          >
+            } flex gap-10 items-center justify-center absolute z-10`}>
             {/* form  */}
             <div className="flex flex-col mx-4 gap-6">
               <div className="flex flex-col gap-6">
@@ -72,14 +69,12 @@ const Contact = () => {
                     placeholder=" "
                     autoComplete="off"
                     cols="30"
-                    rows="5"
-                  ></textarea>
+                    rows="5"></textarea>
                   <label className="label">Message</label>
                 </div>
                 <button
                   onClick={() => setShow(!show)}
-                  className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans py-3"
-                >
+                  className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans py-3">
                   Submit
                 </button>
               </div>
@@ -109,14 +104,14 @@ const Contact = () => {
                     Contact me directly :
                   </h1>
                   <div className="flex flex-col gap-1">
-                  <p className=" text-gray-200 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                    <BsFillPhoneVibrateFill className=" text-lg text-[#6a9c78]" />{" "}
-                    +47 333 78 901
-                  </p>
-                  <p className=" text-gray-200 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                    <MdMarkEmailRead className=" text-lg text-[#6a9c78]" />{" "}
-                    american@gmail.com
-                  </p>
+                    <p className=" text-gray-200 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
+                      <BsFillPhoneVibrateFill className=" text-lg text-[#6a9c78]" />{" "}
+                      +47 333 78 901
+                    </p>
+                    <p className=" text-gray-200 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
+                      <MdMarkEmailRead className=" text-lg text-[#6a9c78]" />{" "}
+                      american@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
@@ -127,26 +122,22 @@ const Contact = () => {
                 <div className="flex gap-6 justify-start">
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                  >
+                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                     <AiFillGithub className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                  >
+                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                     <BsFacebook className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                  >
+                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                     <AiFillInstagram className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                  >
+                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                     <SiNetlify className=" text-lg" />
                   </a>
                 </div>
@@ -159,24 +150,21 @@ const Contact = () => {
         <div
           className={`${
             show ? "ml-[360px] duration-1000" : "ml-0 duration-700"
-          } relative w-[50%]`}
-        >
-          <img src={lightRight} alt="" className=" h-[600px] w-full" />
+          } relative w-[50%]`}>
+          <img src={right} alt="" className=" h-[600px] w-full object-cover" />
           <p
             className={`${
               show
                 ? "opacity-0 left-[-1000px] top-1/4"
                 : "delay-[600ms] opacity-100 top-1/4 left-4"
-            } text-7xl font-extrabold tracking-wide font-sans text-white absolute z-10 max-xl:text-6xl max-lg:text-5xl max-md:text-4xl`}
-          >
+            } text-7xl font-extrabold tracking-wide font-sans text-white absolute z-10 max-xl:text-6xl max-lg:text-5xl max-md:text-4xl`}>
             Together
           </p>
           <button
             onClick={() => setShow(!show)}
             className={`btn btn1 box-shadow bg-transparent border-2 border-[#fff] text-gray-50 rounded-md font-bold font-sans absolute top-1/2 left-[-90px] z-10 px-8 py-3 ${
               show ? " opacity-0" : " delay-[600ms] opacity-100"
-            }`}
-          >
+            }`}>
             Make an enquiry
           </button>
         </div>
@@ -184,8 +172,7 @@ const Contact = () => {
 
       {/* ipad view  */}
       <div
-        className={`flex items-center justify-around bg-[#292923] h-[500px] max-[599px]:hidden min-[900px]:hidden`}
-      >
+        className={`flex items-center justify-around bg-[#292923] h-[500px] max-[599px]:hidden min-[900px]:hidden`}>
         {/* information  */}
         <div className="flex flex-col mx-4 gap-4">
           <h1 className="font-sans text-3xl tracking-wider text-gray-50 font-medium">
@@ -224,26 +211,22 @@ const Contact = () => {
             <div className="flex gap-5 justify-start">
               <a
                 href="#"
-                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-              >
+                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                 <AiFillGithub className=" text-lg" />
               </a>
               <a
                 href="#"
-                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-              >
+                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                 <BsFacebook className=" text-lg" />
               </a>
               <a
                 href="#"
-                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-              >
+                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                 <AiFillInstagram className=" text-lg" />
               </a>
               <a
                 href="#"
-                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-              >
+                className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                 <SiNetlify className=" text-lg" />
               </a>
             </div>
@@ -277,14 +260,12 @@ const Contact = () => {
                 placeholder=" "
                 autoComplete="off"
                 cols="30"
-                rows="5"
-              ></textarea>
+                rows="5"></textarea>
               <label className="label">Message</label>
             </div>
             <button
               onClick={() => setShow(!show)}
-              className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans py-3"
-            >
+              className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans py-3">
               Submit
             </button>
           </form>
@@ -333,14 +314,12 @@ const Contact = () => {
                 placeholder=" "
                 autoComplete="off"
                 cols="30"
-                rows="5"
-              ></textarea>
+                rows="5"></textarea>
               <label className="label">Message</label>
             </div>
             <button
               onClick={() => setShow(!show)}
-              className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans px-8 py-3"
-            >
+              className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans px-8 py-3">
               Submit
             </button>
             <div className="flex flex-col gap-4">
@@ -383,26 +362,22 @@ const Contact = () => {
               <div className="flex gap-6 justify-center">
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                >
+                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                   <AiFillGithub className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                >
+                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                   <BsFacebook className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                >
+                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                   <AiFillInstagram className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center"
-                >
+                  className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
                   <SiNetlify className=" text-lg" />
                 </a>
               </div>
