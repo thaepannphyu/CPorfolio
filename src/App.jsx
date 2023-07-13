@@ -44,7 +44,9 @@ const App = () => {
   };
 
   return (
-    <div className=" relative">
+
+    <div className=" relative bg-[#0f0f0f]">
+
       {/* <Navbar/> */}
       <Menu />
       <section className=" relative">
@@ -55,7 +57,9 @@ const App = () => {
         <Skill />
       </section>
 
+
       <section className=" relative">
+
         <ProjectShow />
       </section>
 

@@ -23,7 +23,7 @@ body {
     font-size: calc(1vw + 1.4rem);
   }
   .h2C {
-    font-size: calc(1vw + 1.2rem);
+    font-size: calc(1vw + 1rem);
   }
   .pC {
     font-size: calc(0.5vw + 1rem);
@@ -34,16 +34,34 @@ body {
     font-size: calc(1vw + 1rem);
   }
   .h2C {
-    font-size: calc(0.5vw + 1rem);
+    font-size: calc(0.5vw + 0.9rem);
   }
   .pC {
     font-size: calc(0.5vw + 0.8rem);
   }
 }
+/* .bg-img{ */
+  /* background-image: linear-gradient(to right bottom, #140c1d, #151124, #15162b, #141a32, #101e39, #14203d, #182141, #1d2345, #2a2245, #352143, #3f1f40, #471e3c); */
+  /* background-image: linear-gradient(to top, #140c1d, #1e1527, #2a1c30, #36243a, #432b43, #482d46, #4c2f4a, #51314d, #4e2e4c, #4b2c4a, #472949, #442748); */
+/* } */
 
 .bgTransparent {
   background-color: #ffffff14;
 }
 .cursiveText {
   font-family: var(--font-family);
+}
+.loop {
+  animation: loopZoom 2s linear infinite;
+}
+@keyframes loopZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
