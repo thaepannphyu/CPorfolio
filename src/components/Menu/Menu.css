@@ -1,12 +1,25 @@
 /* .active {
   background-color: aqua;
 } */
-li:active p {
+.parentMenu:active .childMenu {
   opacity: 1;
 }
-li p {
+.childMenu {
   opacity: 0;
 }
-li:hover p {
+.parentMenu:hover .childMenu {
   opacity: 1;
+}
+.childMenu:hover {
+  opacity: 0;
+}
+.selected {
+  background-color: #c029f03d !important;
+  border: 1.5px dashed #ce3df3 !important;
+  /* border-style: dashed; */
+  /* border-color: blue !important; */
+}
+.btn:hover {
+  background-color: #c029f03d !important;
+  /* box-shadow: 20px 14px -6px #c029f0a3; */
 }

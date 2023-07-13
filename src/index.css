@@ -56,6 +56,11 @@
   .transition2s {
     transition: 1s;
   }
+  /* .shadowChrome {
+    text-shadow: 20px 40px 24px rgba(120, 120, 245, 0.25) 0px 50px 100px -20px,
+      rgba(255, 141, 141, 0.3) 0px 30px 60px -30px,
+      rgba(21, 135, 249, 0.35) 0px -2px 6px 0px inset;
+  } */
 }
 
 /***************************************************
