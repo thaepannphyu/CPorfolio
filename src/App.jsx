@@ -48,26 +48,26 @@ const App = () => {
   return (
 
 
+
     <div className=" relative bg-[rgb(24,24,24)]">
 
 
-      {/* <Navbar/> */}
+      {<Navbar/>}
+
       <Menu />
-      <section className=" relative">
+      <section id="0" className=" relative">
         <Landing />
       </section>
 
-      <section className=" relative">
+      <section id="1" className=" relative">
         <Skill />
       </section>
 
-
-      <section className=" relative">
-
+      <section id="2" className=" relative">
         <ProjectShow />
       </section>
 
-      <section className=" relative">
+      <section id="3" className=" relative">
         <Contact />
       </section>
 
