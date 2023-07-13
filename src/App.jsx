@@ -52,11 +52,11 @@ const App = () => {
 
 
 
-    <div className=" relative bg-[rgb(24,24,24)]">
+    <div className=" relative bg-light">
 
 
 
-      {<Navbar/>}
+      {/* {<Navbar/>} */}
 
       <Menu />
       <section id="0" className=" relative">

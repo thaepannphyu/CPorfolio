@@ -7,12 +7,12 @@ AOS.init();
 
 const Education = () => {
   return (
-    <div className=" font-sans w-[90%] mx-auto mb-14 flex flex-col md:flex-row lg:flex-row gap-[10%] ">
+    <div className=" font-sans w-[90%] mx-auto mb-20 flex flex-col md:flex-row lg:flex-row gap-[10%] ">
       <div
         data-aos="fade-up-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
-        className=" px-5 w-full md:w-[40%] lg:w-[40%] mb-10">
+        className=" px-5 w-full md:w-[40%] lg:w-[40%] mb-10 ">
         <h2 className=" uppercase text-2xl font-bold tracking-widest mb-4 text-[#00ffff]">
           Education
         </h2>
