@@ -57,7 +57,6 @@ const Landing = () => {
               data-aos-duration="1000"
               className=" p-4 overflow-hidden flex justify-center items-center flex-col">
               <div className=" h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
-
                 Hello! I am <strong className=" textname">SAKURA JUNG</strong>
                 <div className=" inline h1C">
                   <IoArrowUndoOutline className=" inline h1C" />
@@ -116,7 +115,7 @@ const Landing = () => {
                 </div>
               </div>
               {/* bottom bar */}
-              <div className="hover:scale-110 transition2s btn-L justify-start ps-2 rounded-e-none scale-[0.6] md:scale-75 lg:scale-100  absolute bottom-[10%] md:bottom-[26%] right-[-10%] gap-3 shadow bgTransparent">
+              <div className=" loop hover:scale-110 transition2s btn-L justify-start ps-2 rounded-e-none scale-[0.6] md:scale-75 lg:scale-100  absolute bottom-[10%] md:bottom-[26%] right-[-10%] gap-3 shadow bgTransparent">
                 <div className="h-[85%] w-11 bg-white overflow-hidden rounded-[50%]">
                   <img
                     src={review}
