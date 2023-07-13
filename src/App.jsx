@@ -43,9 +43,17 @@ const App = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+
+
   return (
-    <div className=" relative bg-black">
-      <Navbar />
+
+
+
+    <div className=" relative bg-[rgb(24,24,24)]">
+
+
+      {<Navbar/>}
+
       <Menu />
       <section id="0" className=" relative">
         <Landing />

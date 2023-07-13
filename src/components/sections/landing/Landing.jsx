@@ -41,7 +41,9 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
+
       <div className=" overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>

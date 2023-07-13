@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// import left from "../../../assets/contactPhoto/bg-left.jpg";
-// import right from "../../../assets/contactPhoto/bg-right.jpg";
+import left from "../../../assets/contactPhoto/bg-left.jpg";
+import right from "../../../assets/contactPhoto/bg-right.jpg";
 // import neonLeft from "../../../assets/contactPhoto/neon-left.jpg";
 // import neonRight from "../../../assets/contactPhoto/neon-right.jpg";
-import lightLeft from "../../../assets/contactPhoto/light-left.jpg";
-import lightRight from "../../../assets/contactPhoto/light-right.jpg";
+// import lightLeft from "../../../assets/contactPhoto/light-left.jpg";
+// import lightRight from "../../../assets/contactPhoto/light-right.jpg";
 import laptop from "../../../assets/contactPhoto/ph-view.jpg";
 import "./contact.css";
 import { AiFillGithub } from "react-icons/ai";
@@ -25,7 +25,7 @@ const Contact = () => {
           className={`${
             show ? "mr-[360px] duration-1000" : "mr-0 duration-700"
           } relative w-[50%]`}>
-          <img src={lightLeft} alt="" className=" h-[600px] w-full" />
+          <img src={left} alt="" className=" h-[600px] w-full object-cover" />
           <p
             className={`${
               show
@@ -151,7 +151,7 @@ const Contact = () => {
           className={`${
             show ? "ml-[360px] duration-1000" : "ml-0 duration-700"
           } relative w-[50%]`}>
-          <img src={lightRight} alt="" className=" h-[600px] w-full" />
+          <img src={right} alt="" className=" h-[600px] w-full object-cover" />
           <p
             className={`${
               show
