@@ -7,6 +7,7 @@ import Skill from "./components/sections/skill/Skill";
 import Contact from "./components/sections/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Menu from "./Components/Menu/menu";
+import About from "./components/sections/about/About";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -57,6 +58,10 @@ const App = () => {
       <Menu />
       <section id="0" className=" relative">
         <Landing />
+      </section>
+
+      <section id="0" className=" relative">
+        <About />
       </section>
 
       <section id="1" className=" relative">
