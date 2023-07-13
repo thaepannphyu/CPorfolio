@@ -43,8 +43,10 @@ const App = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+
+
   return (
-    <div className=" relative bg-img">
+    <div className=" relative bg-img ">
       {/* <Navbar/> */}
       <Menu />
       <section className=" relative">
