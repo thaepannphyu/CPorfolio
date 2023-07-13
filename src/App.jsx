@@ -44,7 +44,7 @@ const App = () => {
   };
 
   return (
-    <div className=" relative bg-img">
+    <div className=" relative">
       {/* <Navbar/> */}
       <Menu />
       <section className=" relative">

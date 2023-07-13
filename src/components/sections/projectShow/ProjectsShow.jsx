@@ -106,13 +106,13 @@ const ProjectsShow = () => {
               disableOnInteraction: false,
             }}
             initialSlide={2}
-            className="mySwiper w-[100%] py-12 pl-5 max-[600px]:pr-5 max-[600px]:pl-10 "
+            className="mySwiper w-[100%] py-12 pl-5 max-[600px]:pr-5 max-[600px]:pl-10 max-[514px]:pr-10 max-[514px]:pl-4"
           >
             {pj.map((pj) => {
               return (
                 <div key={pj.id}>
                   <SwiperSlide>
-                    <div className="card w-[95%] rounded-md overflow-hidden">
+                    <div className="card w-[95%] max-[600px]:ml-5 rounded-md overflow-hidden">
                       <div className="card-body w-full relative cursor-pointer">
                         <img src={pj.img} alt="" className=" " />
                         <div className="layer absolute ">
