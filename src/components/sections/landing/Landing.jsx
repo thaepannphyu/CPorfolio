@@ -12,6 +12,7 @@ import { Modal, Group, Button } from "@mantine/core";
 import resume from "../../../assets/resume.pdf";
 import Svg from "./svg";
 import cv from "../../../assets/cv.png";
+import "../skill/skill.css";
 const Landing = () => {
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
   const el = useRef();
@@ -40,7 +41,7 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
-      <div className="bg-black overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+      <div className=" overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
@@ -49,14 +50,17 @@ const Landing = () => {
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
 
         {/*  */}
-        <div className=" container bgTransparent text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
+        <div className="  container bgTransparent text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
               className=" p-4 overflow-hidden flex justify-center items-center flex-col">
-              <div className=" h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
-                Hello! I am <strong className=" textname">SAKURA JUNG</strong>
+              <div className="text-pink-500 shadowChrome h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
+                Hello! I am{" "}
+                <strong className=" text-yellow-500 shadowChrome">
+                  Khine Zin Thin
+                </strong>
                 <div className=" inline h1C">
                   <IoArrowUndoOutline className=" inline h1C" />
                 </div>
@@ -127,7 +131,7 @@ const Landing = () => {
                   <div className="">
                     <div className="flex items-center space-x-1">
                       <svg
-                        class="w-4 h-4 text-yellow-300"
+                        className="w-4 h-4 text-yellow-300"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"

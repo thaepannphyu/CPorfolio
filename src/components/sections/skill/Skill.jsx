@@ -9,15 +9,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-{/* bg-gradient-to-r from-[#0d0855] via-[#441f5a] to-[#4a4d61] bg-opacity-10 */}
+{
+  /* bg-gradient-to-r from-[#0d0855] via-[#441f5a] to-[#4a4d61] bg-opacity-10 */
+}
 const Skill = () => {
   return (
     <div className=" py-8 mx-auto font-sans">
       <h1
-      data-aos="zoom-in"
-      data-aos-duration="1000"
-       className=" text-center text-white uppercase font-bold tracking-widest text-xl">
-        <span className="text-[#00ffff]">Skills</span> <span className="text-pink-500">& </span> <span className="text-[#e1f85b]">Technologies</span>
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className=" text-center text-white uppercase font-bold tracking-widest text-xl">
+        <span className="text-[#00ffff]">Skills</span>{" "}
+        <span className="text-pink-500">& </span>{" "}
+        <span className="text-[#e1f85b]">Technologies</span>
       </h1>
       {/* skills showcase  */}
       <div className=" w-full mt-5 flex flex-wrap gap-5 justify-center">
@@ -27,7 +31,7 @@ const Skill = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           className=" w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 px-4 py-2 flex flex-col gap-1 justify-center items-center relative group transition duration-700 ease-in-out">
-          <h1 className=" html-icon text-[45px] text-orange-600 group-hover:absolute group-hover:top-0 transition duration-700 ease-in-out group-hover:scale-125">
+          <h1 className=" html-icon text-[45px] text-orange-600 group-hover:absolute group-hover:top-0 transition-all duration-700 ease-in-out group-hover:scale-125">
             <AiOutlineHtml5 />
           </h1>
           <div className="card-shadow1 card-transition flex flex-col gap-8 bgTransparent group-hover:bg-orange-600 group-hover:bg-opacity-30 px-4 py-4 rounded select-none">
