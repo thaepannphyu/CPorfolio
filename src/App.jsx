@@ -7,6 +7,7 @@ import Skill from "./components/sections/skill/Skill";
 import Contact from "./components/sections/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Menu from "./Components/Menu/menu";
+import Education from "./components/sections/education/Education";
 import About from "./components/sections/about/About";
 
 const App = () => {
@@ -47,13 +48,16 @@ const App = () => {
 
 
   return (
+    // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
 
 
-    <div className=" relative bg-[rgb(24,24,24)]">
+
+    <div className=" relative bg-light">
 
 
-      {<Navbar/>}
+
+      {/* {<Navbar/>} */}
 
       <Menu />
       <section id="0" className=" relative">
@@ -72,7 +76,16 @@ const App = () => {
         <ProjectShow />
       </section>
 
+
+      <section className=" relative">
+
+        <Education />
+      </section>
+
+      
+
       <section id="3" className=" relative">
+
         <Contact />
       </section>
 

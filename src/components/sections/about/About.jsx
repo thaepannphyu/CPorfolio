@@ -8,14 +8,14 @@ const About = () => {
   return (
     <div>
         <div className=' flex justify-center h-screen font-sans'>
-        <div className=' w-[90%] flex justify-between items-center max-xl:gap-10'>
+        <div className=' w-[90%] mx-10 flex justify-between items-center max-xl:gap-10'>
             {/* image div  */}
             <div
             data-aos="zoom-in"
             data-aos-duration="2000"
             className=' w-[40%] pl-10 max-xl:pl-0 flex'>
-                <div className='bg-[#e9e655] w-[350px] h-[350px] shadow-md shadow-yellow-300'>
-                    <img src={kzt} className=' w-[350px] h-[350px] object-cover' alt="" />
+                <div className='bg-[#e9e655] w-[350px] h-[400px] shadow-md shadow-yellow-300'>
+                    <img src={kzt} className=' w-[350px] h-[400px] object-cover' alt="" />
                 </div>
             </div>
 
@@ -29,6 +29,7 @@ const About = () => {
                 <p className=' text-xl text-blue-300'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ea est quibusdam architecto odio quos sunt, debitis ipsum rerum perferendis ipsam. Perspiciatis reiciendis voluptatum, consectetur dolores delectus repudiandae ex nobis.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente iste, quos fugiat illum eligendi dicta necessitatibus. Distinctio a necessitatibus, dolorum commodi iusto pariatur nihil aliquam eum fugiat vel, impedit ullam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate architecto, sit ratione aliquid animi accusamus ipsa. Est, aperiam quibusdam deleniti quaerat mollitia illum esse ullam labore, placeat doloribus soluta et.
                 </p>
 
             </div>
