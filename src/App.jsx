@@ -45,7 +45,7 @@ const App = () => {
 
   return (
 
-    <div className=" relative bg-img">
+    <div className=" relative bg-[#1b1a1a]">
 
       {/* <Navbar/> */}
       <Menu />

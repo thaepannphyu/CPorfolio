@@ -40,7 +40,7 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
-      <div className="bg-black overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+      <div className=" overflow-hidden  h-screen flex  justify-center items-center  relative">
 
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
