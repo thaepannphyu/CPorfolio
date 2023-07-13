@@ -7,6 +7,7 @@ import Skill from "./components/sections/skill/Skill";
 import Contact from "./components/sections/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Menu from "./Components/Menu/menu";
+import Education from "./components/sections/education/Education";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -46,9 +47,9 @@ const App = () => {
 
 
   return (
+    // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
-
-    <div className=" relative bg-[rgb(24,24,24)]">
+    <div className=" relative  bg-[rgb(206,205,194)]">
 
 
       {/* <Navbar/> */}
@@ -65,6 +66,11 @@ const App = () => {
       <section className=" relative">
 
         <ProjectShow />
+      </section>
+
+      <section className=" relative">
+
+        <Education />
       </section>
 
       <section className=" relative">
