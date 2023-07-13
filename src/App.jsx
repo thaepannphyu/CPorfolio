@@ -45,7 +45,7 @@ const App = () => {
 
   return (
 
-    <div className=" relative bg-[#1b1a1a]">
+    <div className=" relative bg-[rgb(24,24,24)]">
 
       {/* <Navbar/> */}
       <Menu />
