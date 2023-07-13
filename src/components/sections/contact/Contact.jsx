@@ -19,19 +19,19 @@ const Contact = () => {
   return (
     <>
       {/* laptop view */}
-      <div className="flex w-[100%] relative bg-[#292923] max-[899px]:hidden">
+      <div className="flex w-[100%] relative bg-[rgb(20,20,20)] max-[899px]:hidden">
         {/* left side */}
         <div
           className={`${
             show ? "mr-[360px] duration-1000" : "mr-0 duration-700"
-          } relative w-[50%]`}>
-          <img src={left} alt="" className=" h-[600px] w-full object-cover" />
+          } relative w-[50%] h-[600px] bg-left-right`}>
+          {/* <img src={left} alt="" className=" h-[600px] w-full object-cover" /> */}
           <p
             className={`${
               show
                 ? "opacity-0 left-[-1000px] top-1/4"
-                : "delay-[600ms] top-1/4 right-2 opacity-100"
-            } text-7xl font-extrabold font-sans text-white absolute z-10 max-xl:text-6xl max-lg:text-5xl max-md:text-4xl`}>
+                : "delay-[600ms] opacity-100"
+            } text-left-right right-0 top-1/4`}>
             Let's work
           </p>
 
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
                 <button
                   onClick={() => setShow(!show)}
-                  className=" bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 rounded-md font-bold font-sans py-3">
+                  className="form-btn duration-500 text-gray-50 rounded-md font-bold font-sans py-3">
                   Submit
                 </button>
               </div>
@@ -82,62 +82,62 @@ const Contact = () => {
 
             {/* information  */}
             <div className="flex flex-col mx-4 gap-5">
-              <h1 className="font-sans text-3xl tracking-wider text-gray-50 font-medium">
+              <h1 className="font-sans text-3xl tracking-wider text-yellow-500 font-medium">
                 Portfolio
               </h1>
               <div className="flex flex-col gap-5">
                 <div className="flex flex-col gap-2 justify-start">
-                  <h1 className=" font-sans text-xl text-gray-50 font-medium">
+                  <h1 className=" font-sans text-xl text-cyan-500 font-medium">
                     Address :
                   </h1>
                   <div className="flex flex-col gap-1">
-                    <p className=" text-gray-200 font-sans tracking-wider text-sm">
+                    <p className=" text-pink-400 font-sans tracking-wider text-sm">
                       Myanmar , Yangon
                     </p>
-                    <p className=" text-gray-200 font-sans tracking-wider text-sm">
+                    <p className=" text-pink-400 font-sans tracking-wider text-sm">
                       North Dagon
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-2 justify-start">
-                  <h1 className=" font-sans text-xl text-gray-50 font-medium">
+                  <h1 className=" font-sans text-xl text-cyan-500 font-medium">
                     Contact me directly :
                   </h1>
                   <div className="flex flex-col gap-1">
-                    <p className=" text-gray-200 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                      <BsFillPhoneVibrateFill className=" text-lg text-[#6a9c78]" />{" "}
+                    <p className=" text-pink-400 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
+                      <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                       +47 333 78 901
                     </p>
-                    <p className=" text-gray-200 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                      <MdMarkEmailRead className=" text-lg text-[#6a9c78]" />{" "}
+                    <p className=" text-pink-400 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
+                      <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                       american@gmail.com
                     </p>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-4 justify-start">
-                <p className=" text-xl font-sans font-medium text-gray-50">
+                <p className=" text-xl font-sans font-medium text-cyan-500 ">
                   Check my profiles
                 </p>
                 <div className="flex gap-6 justify-start">
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
                     <AiFillGithub className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
                     <BsFacebook className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
                     <AiFillInstagram className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full bg-[#5c7658] hover:bg-[#6a9c78] duration-500 text-gray-50 flex justify-center items-center">
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
                     <SiNetlify className=" text-lg" />
                   </a>
                 </div>
@@ -150,19 +150,19 @@ const Contact = () => {
         <div
           className={`${
             show ? "ml-[360px] duration-1000" : "ml-0 duration-700"
-          } relative w-[50%]`}>
-          <img src={right} alt="" className=" h-[600px] w-full object-cover" />
+          } relative w-[50%] h-[600px] bg-left-right`}>
+          {/* <img src={right} alt="" className=" h-[600px] w-full object-cover" /> */}
           <p
             className={`${
               show
-                ? "opacity-0 left-[-1000px] top-1/4"
-                : "delay-[600ms] opacity-100 top-1/4 left-4"
-            } text-7xl font-extrabold tracking-wide font-sans text-white absolute z-10 max-xl:text-6xl max-lg:text-5xl max-md:text-4xl`}>
+                ? "opacity-0 left-[-30em] top-1/4"
+                : "delay-[600ms] opacity-100"
+            } text-left-right left-8 top-1/4`}>
             Together
           </p>
           <button
             onClick={() => setShow(!show)}
-            className={`btn btn1 box-shadow bg-transparent border-2 border-[#fff] text-gray-50 rounded-md font-bold font-sans absolute top-1/2 left-[-90px] z-10 px-8 py-3 ${
+            className={`btn btn1 box-shadow bg-transparent rounded-md font-bold font-sans absolute top-[60%] left-[-90px] z-10 px-8 py-3 ${
               show ? " opacity-0" : " delay-[600ms] opacity-100"
             }`}>
             Make an enquiry

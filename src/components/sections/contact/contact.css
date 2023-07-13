@@ -36,7 +36,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #5c7658;
+  border: 2px solid rgb(202, 26, 149);
   border-radius: 10px;
   font-family: sans-serif;
   font-size: 15px;
@@ -47,11 +47,11 @@
   transition: 0.8s;
 
   &:hover {
-    border-color: #6a9c78;
+    border-color: rgba(202, 26, 149, 0.74);
   }
 
   &:focus {
-    border-color: #6a9c78;
+    border-color: rgba(202, 26, 149, 0.74);
   }
 }
 
@@ -61,16 +61,18 @@
   top: 0.75rem;
   padding: 0 0.4rem;
   color: white;
+  font-size: 0.8rem;
   font-family: sans-serif;
   font-weight: bold;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-  background-color: #292923;
+  background-color: rgb(20,20,20);
+  letter-spacing: 1px;
 }
 
 .input:focus ~ .label,
 .input:not(:placeholder-shown).input:not(:focus) ~ .label {
   top: -0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   left: 0.9rem;
   font-weight: 6px;
 }
@@ -78,6 +80,8 @@
 .btn {
   transition: 0.8s;
   overflow: hidden;
+  color: rgb(202, 26, 149);
+  border: 3px solid rgb(202, 26, 149);
 }
 
 .btn::before {
@@ -86,13 +90,13 @@
   left: 0;
   width: 100%;
   height: 0%;
-  background-color: #fff;
+  background-color: rgb(202, 26, 149);
   z-index: -1;
   transition: 1s;
 }
 
 .btn1:hover {
-  color: #292923;
+  color: #f3f3ec;
   transition: 0.1s;
 }
 
@@ -166,4 +170,42 @@
     box-shadow: rgba(202, 26, 149, 0.363) 0px 2px 4px 0px,
       rgba(202, 26, 149, 0.363) 0px 2px 16px 0px;
   }
+}
+
+.bg-left-right{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-left-right {
+  position: absolute;
+  /* top: 30%;  */
+  /* right: 0%; */
+  /* transform: translate(50%,-50%); */
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 4em;
+  font-weight: 700;
+  color: rgb(202, 26, 149);
+  text-shadow: 1px 1px 1px #f5f0f07a,
+      1px 2px 1px #f5f0f079,
+      1px 3px 1px #f5f0f079,
+      1px 4px 1px #f5f0f079,
+      1px 5px 1px #f5f0f079,
+      1px 6px 1px #f5f0f079,
+      1px 7px 1px #f5f0f079,
+      1px 8px 1px #f5f0f079,
+      1px 9px 1px #f5f0f079,
+      1px 10px 1px #f5f0f079,
+  1px 18px 6px rgba(202, 26, 149, 0.514),
+  1px 22px 10px rgba(202, 26, 149, 0.514),
+  1px 25px 35px rgba(202, 26, 149, 0.514),
+  1px 30px 60px rgba(202, 26, 149, 0.514);
+}
+
+.form-btn{
+  background-color: rgb(202, 26, 149);
+}
+
+.form-btn:hover{
+  background-color: rgba(202, 26, 149, 0.74);
 }
