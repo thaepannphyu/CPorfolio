@@ -9,6 +9,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
+
+
 const Skill = () => {
   return (
     <div className=" py-8 mx-auto font-sans">
@@ -16,17 +18,30 @@ const Skill = () => {
         data-aos="zoom-in"
         data-aos-duration="1000"
         className=" text-center text-white uppercase font-bold tracking-widest text-xl">
-        <span className="text-[#00ffff]">Skills</span>
-        <span className="text-pink-500">& </span>
+
+        <span className="text-[#00ffff]">Skills</span>{" "}
+        <span className="text-pink-500">& </span>{" "}
         <span className="text-[#e1f85b]">Technologies</span>
       </h1>
       {/* skills showcase  */}
-      <div class="flex flex-wrap justify-center mt-10 w-[90%] mx-auto">
-        {/* HTML skill  */}
-        <div class="p-4 max-w-sm">
-          <div class="flex h-full p-8 flex-col relative">
-            <p className=" absolute -top-8 right-[40%] text-[60px] text-orange-600">
-              <AiOutlineHtml5 />
+      <div className=" w-full mt-5 flex flex-wrap gap-5 justify-center">
+        {/* Html skill  */}
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          className=" w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 px-4 py-2 flex flex-col gap-1 justify-center items-center relative group transition duration-700 ease-in-out">
+          <h1 className=" html-icon text-[45px] text-orange-600 group-hover:absolute group-hover:top-0 transition-all duration-700 ease-in-out group-hover:scale-125">
+            <AiOutlineHtml5 />
+          </h1>
+          <div className="card-shadow1 card-transition flex flex-col gap-8 bgTransparent group-hover:bg-orange-600 group-hover:bg-opacity-30 px-4 py-4 rounded select-none">
+            <p>
+              <h1 className=" text-center font-bold text-[#ffffff] back-shadow1">
+                HTML SKILL
+              </h1>
+              <h1 className=" text-left break-all py-5 text-[#ffffffab]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h1>
             </p>
             <div className=" bg-[#cc4a2a] border-b-4 border-[#cc4a2a] bg-opacity-40 p-8 -mt-5 rounded-lg">
               <h2 className=" flex justify-center items-center text-white back-shadow1">
