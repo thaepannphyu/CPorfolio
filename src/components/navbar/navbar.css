@@ -1,0 +1,28 @@
+.btnNav:hover {
+  background-color: #c029f03d !important;
+  box-shadow: 20px 14px -6px #c029f0a3;
+}
+.btn .selected {
+  border: 2px solid #c029f03d;
+  background-color: aqua;
+}
+.shadowBox {
+  box-shadow: 22px -53px 170px 15px rgba(198, 44, 231, 0.52);
+  -webkit-box-shadow: 22px -53px 170px 15px rgba(198, 44, 231, 0.52);
+  -moz-box-shadow: 22px -53px 170px 15px rgba(198, 44, 231, 0.52);
+}
+.btn {
+  border: 2px solid #c029f03d;
+  background-color: transparent;
+}
+.textMovable {
+  animation: textMove 2s linear infinite;
+}
+@keyframes textMove {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 200px;
+  }
+}

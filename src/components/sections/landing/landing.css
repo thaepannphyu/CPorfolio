@@ -17,8 +17,8 @@
 .textname {
   background: linear-gradient(
     351deg,
-    rgb(173, 18, 193) 0%,
-    rgb(5, 45, 79) 65%,
+    rgb(18, 193, 62) 0%,
+    rgb(1, 43, 79) 65%,
     rgba(125, 143, 223, 0.478) 100%
   );
   background-clip: text;

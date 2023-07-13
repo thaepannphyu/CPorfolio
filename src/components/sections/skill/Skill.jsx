@@ -9,12 +9,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
+
+
 const Skill = () => {
   return (
     <div className=" py-8 font-sans w-[90%] mx-auto">
       <h1
         data-aos="zoom-in"
         data-aos-duration="1000"
+
         className=" text-center text-white uppercase font-bold tracking-widest text-2xl">
         <span className="text-[#00ffff] skill">Skills</span>
         <span className="text-pink-500 and"> & </span>
@@ -23,14 +26,18 @@ const Skill = () => {
       {/* skills showcase  */}
       <div class="flex flex-wrap justify-center mt-24">
         {/* HTML skill  */}
+
+        
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
+
           class=" px-4 max-w-sm group mb-16 ">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-orange-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <AiOutlineHtml5 />
+
             </p>
             <div className=" card-background card-background1 shadow-md shadow-[#ff8800]  bg-white bg-opacity-10  border-b-4 border-[#cc4a2a] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow1">
