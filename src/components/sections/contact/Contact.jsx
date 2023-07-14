@@ -5,6 +5,8 @@ import right from "../../../assets/contactPhoto/bg-right.jpg";
 // import neonRight from "../../../assets/contactPhoto/neon-right.jpg";
 // import lightLeft from "../../../assets/contactPhoto/light-left.jpg";
 // import lightRight from "../../../assets/contactPhoto/light-right.jpg";
+import newLeft from "../../../assets/contactPhoto/new-left.jpg";
+import newRight from "../../../assets/contactPhoto/new-right.jpg";
 import laptop from "../../../assets/contactPhoto/ph-view.jpg";
 import "./contact.css";
 import { AiFillGithub } from "react-icons/ai";
@@ -25,14 +27,14 @@ const Contact = () => {
           className={`${
             show ? "mr-[360px] duration-1000" : "mr-0 duration-700"
           } relative w-[50%] h-[600px] bg-left-right`}>
-          {/* <img src={left} alt="" className=" h-[600px] w-full object-cover" /> */}
+          <img src={newLeft} alt="" className=" h-[600px] w-full object-cover" />
           <p
             className={`${
               show
                 ? "opacity-0 left-[-1000px] top-1/4"
                 : "delay-[600ms] opacity-100"
-            } text-left-right right-0 top-1/4`}>
-            Let's work
+            } text-left-right right-[-400px] z-10 top-1/4`}>
+            Let's work together
           </p>
 
           {/* form and information */}
@@ -105,11 +107,11 @@ const Contact = () => {
                   </h1>
                   <div className="flex flex-col gap-1">
                     <p className=" text-pink-400 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                      <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
+                      <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
                       +47 333 78 901
                     </p>
                     <p className=" text-pink-400 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                      <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
+                      <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
                       american@gmail.com
                     </p>
                   </div>
@@ -151,15 +153,7 @@ const Contact = () => {
           className={`${
             show ? "ml-[360px] duration-1000" : "ml-0 duration-700"
           } relative w-[50%] h-[600px] bg-left-right`}>
-          {/* <img src={right} alt="" className=" h-[600px] w-full object-cover" /> */}
-          <p
-            className={`${
-              show
-                ? "opacity-0 left-[-30em] top-1/4"
-                : "delay-[600ms] opacity-100"
-            } text-left-right left-8 top-1/4`}>
-            Together
-          </p>
+          <img src={newRight} alt="" className=" h-[600px] w-full object-cover" />
           <button
             onClick={() => setShow(!show)}
             className={`btn btn1 box-shadow bg-transparent rounded-md font-bold font-sans absolute top-[60%] left-[-90px] z-10 px-8 py-3 ${
