@@ -7,7 +7,7 @@ const Navbar = () => {
   const active = useSelector((state) => state.NavLink.value);
   const dispatch = useDispatch();
   return (
-    <div className=" fixed z-50 left-0 top-0 right-0">
+    <div className="fixed  z-50 left-0 top-0 right-0 mb-5">
       <div className=" container mx-auto flex justify-between items-center gap-10">
         {/* logo */}
         <NavHashLink
@@ -16,7 +16,10 @@ const Navbar = () => {
           onClick={() => {
             dispatch(setActive(0));
           }}>
-          <div className="  shadowBox py-4 rounded w-[20%] flex justify-between items-center">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="1200"
+            className="  shadowBox py-4 rounded w-[20%] flex justify-between items-center">
             <div className="  ">
               <p
                 className={`${
@@ -28,7 +31,10 @@ const Navbar = () => {
           </div>
         </NavHashLink>
         {/* menu */}
-        <div className=" w-[60%] shadowBox py-4 rounded">
+        <div
+          data-aos="fade-down-left"
+          data-aos-duration="1200"
+          className=" w-[60%] shadowBox py-4 rounded">
           <ul className=" flex justify-between items-center">
             <NavHashLink
               to="#0"
@@ -36,7 +42,10 @@ const Navbar = () => {
                 dispatch(setActive(0));
               }}
               smooth>
-              <li className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+              <li
+                data-aos="fade-down-left"
+                data-aos-duration="1200"
+                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
                 <p> Home</p>
               </li>
             </NavHashLink>
@@ -47,7 +56,10 @@ const Navbar = () => {
                 dispatch(setActive(1));
               }}
               smooth>
-              <li className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+              <li
+                data-aos="fade-down-left"
+                data-aos-duration="1200"
+                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
                 Skill
               </li>
             </NavHashLink>
@@ -58,7 +70,10 @@ const Navbar = () => {
                 dispatch(setActive(2));
               }}
               smooth>
-              <li className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+              <li
+                data-aos="fade-down-left"
+                data-aos-duration="1200"
+                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
                 Projects
               </li>
             </NavHashLink>
@@ -70,6 +85,8 @@ const Navbar = () => {
               }}
               smooth>
               <li
+                data-aos="fade-down-left"
+                data-aos-duration="1200"
                 className={`${
                   active == 3 && ""
                 } overflow-hidden btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center`}>
