@@ -41,9 +41,7 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
-
       <div className=" overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
-
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
@@ -54,11 +52,11 @@ const Landing = () => {
         {/*  */}
         <div className="  container bgTransparent text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
-            <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              className=" p-4 overflow-hidden flex justify-center items-center flex-col">
-              <div className="text-pink-500 shadowChrome h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
+            <div className=" p-4 overflow-hidden flex justify-center items-center flex-col">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                className="text-pink-500 shadowChrome h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
                 Hello! I am{" "}
                 <strong className=" text-yellow-500 shadowChrome">
                   Khine Zin Thin
@@ -80,7 +78,10 @@ const Landing = () => {
                 </div>
               </div>
               {/* btn */}
-              <div className=" hover:scale-110 transition2s flex justify-center items-center animate__animated animate__rubberBand">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                className=" hover:scale-110 transition2s flex justify-center items-center animate__animated animate__rubberBand">
                 <div className="btn-L scale-[0.6] md:scale-75 lg:scale-100  gap-3 shadow bgTransparent">
                   <a
                     href="https://www.facebook.com/profile.php?id=100038518265438"
@@ -103,15 +104,23 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            className="w-full md:w-1/2  lg:w-1/2  flex justify-center flex-col ">
+          <div className="w-full md:w-1/2  lg:w-1/2  flex justify-center flex-col ">
             <div className=" flex h-full justify-center items-center relative w-full  overflow-hidden">
               <div className=" h-80 w-52 scale-[0.6] md:scale-75 lg:scale-100 flex rounded-lg relative">
-                <div className=" h-32 w-32 bg-violet-200 rounded-[50%] absolute top-[-50px] left-[117px] "></div>
-                <div className="  h-36 w-36 bg-blue-200  rounded-[50%] absolute bottom-[-43px] right-[104px]"></div>
-                <div className=" h-full  w-full bg-pink-200 z-[2] absolute left-0   bottom-0 rounded border-4">
+                <div
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1100"
+                  className=" h-32 w-32 bg-violet-200 rounded-[50%] absolute top-[-50px] left-[117px] "></div>
+                <div
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1100"
+                  className="  h-36 w-36 bg-blue-200  rounded-[50%] absolute bottom-[-43px] right-[104px]"></div>
+                <div
+                  data-aos="flip-left"
+                  data-aos-duration="1400"
+                  className=" h-full  w-full bg-pink-200 z-[2] absolute left-0   bottom-0 rounded border-4">
                   <img
                     src={photo}
                     alt=""
@@ -121,15 +130,22 @@ const Landing = () => {
               </div>
               {/* bottom bar */}
               <div className=" loop hover:scale-110 transition2s btn-L justify-start ps-2 rounded-e-none scale-[0.6] md:scale-75 lg:scale-100  absolute bottom-[10%] md:bottom-[26%] right-[-10%] gap-3 shadow bgTransparent">
-                <div className="h-[85%] w-11 bg-white overflow-hidden rounded-[50%]">
+                <div className="h-[85%] BgWater w-11  overflow-hidden rounded-[50%]">
                   <img
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1100"
                     src={review}
                     alt=""
-                    className="hover:scale-110 transition2s object-cover "
+                    className="hover:scale-110  transition2s object-cover "
                   />
                 </div>
                 {/* star */}
-                <div className="hover:scale-110 transition2s">
+                <div
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1100"
+                  className="hover:scale-110 transition2s">
                   <div className="">
                     <div className="flex items-center space-x-1">
                       <svg
