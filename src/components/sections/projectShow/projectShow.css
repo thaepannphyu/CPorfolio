@@ -39,11 +39,16 @@
 }
 
 .card{
-    box-shadow: #00ffff 0px 2px 8px 0px;
+    box-shadow: #ca1a95 0px 2px 8px 0px;
 }
 @media screen and (max-width:600px) {
     .card{
-        box-shadow: #00ffff 0px 2px 2px 0px;
+        box-shadow: #ca1a95 0px 2px 2px 0px;
+    }
+}
+@media screen and (max-width:525px) {
+    .card{
+        box-shadow: #ca1a95 0px 2px 8px 0px;
     }
 }
 .card:hover .layer{

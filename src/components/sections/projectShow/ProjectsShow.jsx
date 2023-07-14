@@ -59,6 +59,29 @@ const ProjectsShow = () => {
       git: "https://github.com/khinezinthin/Edu_Pro_Dashboard",
     },
   ];
+  const pj2 = [
+    {
+      id: 1,
+      name: "Contact Web Design",
+      img: image1,
+      demo: "https://contact-web1.netlify.app",
+      git: "https://github.com/khinezinthin/Contact-web",
+    },
+    {
+      id: 2,
+      name: "Frontend Web Design",
+      img: image2,
+      demo: "https://eduvide.netlify.app",
+      git: "https://github.com/khinezinthin/Edu-Pro",
+    },
+    {
+      id: 3,
+      name: "Dashboard Web Design",
+      img: image3,
+      demo: "https://edu-pro-dashboard2.netlify.app",
+      git: "https://github.com/khinezinthin/Edu_Pro_Dashboard",
+    },
+  ];
   return (
     <>
       <div className=" py-10 mb-28 font-sans">
@@ -66,7 +89,7 @@ const ProjectsShow = () => {
         <div
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="flex flex-col justify-center items-center gap-3 mt-5">
+          className="flex flex-col justify-center items-center gap-3 mt-5 select-none">
           <h1 className=" text-3xl font-bold tracking-wider text-[#00ffff]">
             Recent <span className=" text-[#FFFF00]">Projects</span>
           </h1>
@@ -78,7 +101,7 @@ const ProjectsShow = () => {
         </div>
 
         {/* swiper  */}
-        <div className=" mt-8 mx-10">
+        <div className=" mt-8 mx-10 max-[525px]:hidden">
           <Swiper
             slidesPerView={3}
             spaceBetween={23}
@@ -140,6 +163,40 @@ const ProjectsShow = () => {
               );
             })}
           </Swiper>
+        </div>
+
+        {/* max-[525px] swiper show  */}
+        <div className="max-[525px]:block hidden">
+        {pj2.map((pj) => {
+          return (
+            <div key={pj.id} className="flex justify-center">
+              <div className="card w-[90%] rounded-md overflow-hidden mt-8">
+                <div className="card-body w-full relative cursor-pointer">
+                    <img src={pj.img} alt="" className=" " />
+                    <div className="layer absolute ">
+                      <h1 className=" tracking-wide max-xl:whitespace-nowrap">
+                        {pj.name}
+                      </h1>
+                      <div className="flex justify-center items-center gap-3">
+                        <a
+                              href={pj.demo}
+                              target="_blank"
+                              className=" hover:bg-[#00ffff] hover:text-black duration-500 border px-2 py-1 border-[#00ffff] rounded-sm text-sm">
+                              Demo
+                        </a>
+                        <a
+                              href={pj.git}
+                              target="_blank"
+                              className=" hover:bg-[#00ffff] hover:text-black duration-500 border px-3 py-1 border-[#00ffff] rounded-sm  text-sm">
+                              GitHub
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          );
+          })}
         </div>
       </div>
     </>

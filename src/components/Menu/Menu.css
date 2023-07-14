@@ -12,6 +12,7 @@
 }
 .childMenu:hover {
   opacity: 0;
+
 }
 .selected {
   background-color: #c029f03d !important;
