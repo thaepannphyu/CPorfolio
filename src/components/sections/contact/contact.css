@@ -219,3 +219,55 @@
 .img-shadow{
   box-shadow: rgba(244, 248, 18, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.ipad {
+  /* position: absolute; */
+  /* top: 30%;  */
+  /* right: 0%; */
+  /* transform: translate(50%,-50%); */
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 3em;
+  font-weight: 700;
+  color: rgb(202, 26, 149);
+  text-shadow: 1px 1px 1px #f5f0f07a,
+      1px 2px 1px #f5f0f079,
+      1px 3px 1px #f5f0f079,
+      1px 4px 1px #f5f0f079,
+      1px 5px 1px #f5f0f079,
+      1px 6px 1px #f5f0f079,
+      1px 7px 1px #f5f0f079,
+      1px 8px 1px #f5f0f079,
+      1px 9px 1px #f5f0f079,
+      1px 10px 1px #f5f0f079,
+  1px 18px 6px rgba(202, 26, 149, 0.514),
+  1px 22px 10px rgba(202, 26, 149, 0.514),
+  1px 25px 35px rgba(202, 26, 149, 0.514),
+  1px 30px 60px rgba(202, 26, 149, 0.514);
+}
+
+.ph {
+  /* position: absolute; */
+  /* top: 30%;  */
+  /* right: 0%; */
+  /* transform: translate(50%,-50%); */
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(202, 26, 149);
+  text-shadow: 1px 1px 1px #f5f0f07a,
+      1px 2px 1px #f5f0f079,
+      1px 3px 1px #f5f0f079,
+      1px 4px 1px #f5f0f079,
+      1px 5px 1px #f5f0f079,
+      1px 6px 1px #f5f0f079,
+      1px 7px 1px #f5f0f079,
+      1px 8px 1px #f5f0f079,
+      1px 9px 1px #f5f0f079,
+      1px 10px 1px #f5f0f079,
+  1px 18px 6px rgba(202, 26, 149, 0.514),
+  1px 22px 10px rgba(202, 26, 149, 0.514),
+  1px 25px 35px rgba(202, 26, 149, 0.514),
+  1px 30px 60px rgba(202, 26, 149, 0.514);
+}
