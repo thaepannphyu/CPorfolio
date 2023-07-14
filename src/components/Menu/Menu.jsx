@@ -40,9 +40,13 @@ const Menu = () => {
     window.addEventListener("resize", setPosition);
   }, [windowSize]);
   // console.log(windowSize.width);
+
   return (
     <Draggable
       axis="y"
+      handle=".handle"
+      defaultClassNameDragging="drag"
+      defaultClassNameDragged="dragend"
       defaultPosition={
         windowSize.width > 600 ? { x, y: y * 0.5 } : { x: xS, y: y * 0.5 }
       }
@@ -52,17 +56,21 @@ const Menu = () => {
           : { top: 20, bottom: ys }
       }>
       <div className=" fixed z-50">
-        <div className="menu    py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="menu    py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]">
           <div
+            id="#drag1"
             onClick={() => {
               settoogle(!toogle);
             }}
             className={`${
-              toogle == true
-                ? " activeT"
-                : " md:scale-125 lg:scale-125 scale-110"
-            }  z-10  w-10 h-10 bg-black parentMenu  transition2s shadow rounded-[50%] flex justify-center items-center`}>
+              toogle == true ? " " : " md:scale-125 lg:scale-125 scale-110"
+            } handle relative z-40  w-10 h-10 bg-black parentMenu  transition2s shadow rounded-[50%] flex justify-center items-center`}>
             <AiOutlineMenu
+              id="#drag2"
               className={`lg:text-2xl md:text-lg  transition-all absolute ${
                 toogle == true ? " opacity-0" : " "
               } text-cyan-600 back-shadow2`}
@@ -71,7 +79,7 @@ const Menu = () => {
             <AiOutlineClose
               className={`lg:text-2xl md:text-lg transition-all absolute ${
                 toogle == false ? " opacity-0" : ""
-              }  text-cyan-600 back-shadow2`}
+              }  text-cyan-600 back-shadow2 `}
             />
           </div>
           <ul

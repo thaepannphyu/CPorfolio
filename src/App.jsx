@@ -45,19 +45,12 @@ const App = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-
-
+  // console.log(window.scrollY);
   return (
     // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
-
-
-
-    <div className=" relative bg-[rgb(24,24,24)]">
-
-
-
-      {/* {<Navbar/>} */}
+    <div className=" relative bg-[rgb(24,24,24)] ">
+      {<Navbar />}
 
       <Menu />
       <section id="0" className=" relative">
