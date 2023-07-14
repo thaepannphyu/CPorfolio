@@ -69,6 +69,12 @@
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 900px) {
+  .label{
+    background-color: rgb(24,24,24);
+  }
+}
+
 .input:focus ~ .label,
 .input:not(:placeholder-shown).input:not(:focus) ~ .label {
   top: -0.6rem;
