@@ -7,11 +7,10 @@ AOS.init();
 
 const Education = () => {
   return (
-    <div className=" h-screen font-sans w-[90%] mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%] ">
+    <div className=" font-sans w-[90%] mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%]">
       <div
-        data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        data-aos="fade-up"
+        data-aos-duration="3000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%] mb-10 ">
         <h2 className=" uppercase text-2xl font-bold tracking-widest mb-4 text-[#00ffff]">
           Education
@@ -45,9 +44,11 @@ const Education = () => {
         </Timeline>
       </div>
       <div
-        data-aos="fade-up-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        // data-aos="fade-up-left"
+        // data-aos-offset="300"
+        // data-aos-easing="ease-in-sine"
+        data-aos="fade-up"
+        data-aos-duration="3000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%]">
         <h2 className=" uppercase text-2xl font-semibold tracking-widest mb-4 text-[#e1f85b]">
           Experience

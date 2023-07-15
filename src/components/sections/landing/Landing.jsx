@@ -13,6 +13,7 @@ import resume from "../../../assets/resume.pdf";
 import Svg from "./svg";
 import cv from "../../../assets/cv.png";
 import "../skill/skill.css";
+
 const Landing = () => {
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
   const el = useRef();
@@ -41,7 +42,7 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
-      <div className=" mt-10 lg:mt-0 md:mt-0 overflow-hidden  h-screen flex  justify-center items-center  relative ">
+      <div className="   overflow-hidden  h-screen flex  justify-center items-center  relative ">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
