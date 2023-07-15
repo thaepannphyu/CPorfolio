@@ -60,11 +60,11 @@ const Menu = () => {
           ? { top: 10, bottom: y }
           : { top: 20, bottom: ys }
       }>
-      <div
-        className={`${
-          scroll > 620 ? "opacity-100" : "opacity-0"
-        } fixed z-50 transition2s`}>
-        <div className="menu    py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]">
+      <div className={`fixed z-50 `}>
+        <div
+          className={`${
+            scroll > 620 ? "opacity-100" : "opacity-0"
+          }  menu  transition2s  py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]`}>
           <div
             id="#drag1"
             onClick={() => {
