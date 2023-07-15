@@ -33,7 +33,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-orange-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <AiOutlineHtml5 />
             </p>
-            <div className=" card-background card-background1 shadow-md shadow-[#ff8800]  bg-white bg-opacity-10  border-b-4 border-[#cc4a2a] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background1 shadow-md shadow-[#ff8800]  bg-white bg-opacity-10 border-b border-[#cc4a2a] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow1">
                 HTML SKILL
               </h2>
@@ -65,7 +65,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <TbBrandCss3 />
             </p>
-            <div className=" card-background card-background2 shadow-md shadow-[#002fff] bg-white bg-opacity-10 border-b-4 border-[#2a63cc] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background2 shadow-md shadow-[#002fff] bg-white bg-opacity-10 border-b border-[#2a63cc] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow2">
                 CSS SKILL
               </h2>
@@ -97,7 +97,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-pink-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <FaSass />
             </p>
-            <div className=" card-background card-background3 bg-white bg-opacity-10 shadow-md shadow-[#ff00d4] border-b-4 border-[#e767eb] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background3 bg-white bg-opacity-10 shadow-md shadow-[#ff00d4] border-b border-[#e767eb] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow3">
                 SASS SKILL
               </h2>
@@ -129,7 +129,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-yellow-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <BiLogoJavascript />
             </p>
-            <div className=" card-background card-background4 bg-white bg-opacity-10 shadow-md shadow-[#ffe600] border-b-4 border-[#dfcc29] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background4 bg-white bg-opacity-10 shadow-md shadow-[#ffe600] border-b border-[#dfcc29] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow4">
                 JAVASCRIPT SKILL
               </h2>
@@ -161,7 +161,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-purple-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <FaBootstrap />
             </p>
-            <div className=" card-background card-background5 bg-white bg-opacity-10 shadow-md shadow-[#8400ff] border-b-4 border-[#7829df] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background5 bg-white bg-opacity-10 shadow-md shadow-[#8400ff] border-b border-[#7829df] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow5">
                 BOOTSTRAP SKILL
               </h2>
@@ -193,7 +193,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-400 group-hover:scale-110 transition-all ease-in-out delay-150">
               <FaReact />
             </p>
-            <div className=" card-background card-background6 bg-white bg-opacity-10 shadow-md shadow-[#0011ff] border-b-4 border-[#299cdf] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background6 bg-white bg-opacity-10 shadow-md shadow-[#0011ff] border-b border-[#299cdf] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow6">
                 REACT SKILL
               </h2>
@@ -225,7 +225,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-purple-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <SiRedux />
             </p>
-            <div className=" card-background card-background5 bg-white bg-opacity-10 shadow-md shadow-[#8400ff] border-b-4 border-[#7829df] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background5 bg-white bg-opacity-10 shadow-md shadow-[#8400ff] border-b border-[#7829df] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow5">
                 REDUX SKILL
               </h2>
@@ -258,7 +258,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <SiTailwindcss />
             </p>
-            <div className=" card-background card-background2 bg-white bg-opacity-10 shadow-md shadow-[#00a2ff] border-b-4 border-[#2969df] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background2 bg-white bg-opacity-10 shadow-md shadow-[#00a2ff] border-b border-[#2969df] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow8">
                 TAILWIND CSS SKILL
               </h2>
@@ -287,10 +287,10 @@ const Skill = () => {
           data-aos-duration="2000"
           class="px-4 max-w-sm group mb-16">
           <div class="flex h-full p-8 flex-col relative">
-            <p className=" absolute -top-8 right-[40%] text-[60px] text-gray-800 group-hover:scale-110 transition-all ease-in-out delay-150">
+            <p className=" absolute -top-8 right-[40%] text-[60px] text-gray-900 group-hover:scale-110 transition-all ease-in-out delay-150">
               <AiOutlineGithub />
             </p>
-            <div className=" card-background card-background9 bg-white bg-opacity-10 shadow-md shadow-[#272625] border-b-4 border-[#232225] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background9 bg-white bg-opacity-10 shadow-md shadow-[#272625] border-b border-[#232225] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow9">
                 GITHUB SKILL
               </h2>
@@ -322,7 +322,7 @@ const Skill = () => {
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <TbBrandVscode />
             </p>
-            <div className=" card-background card-background2 bg-white bg-opacity-10 shadow-md shadow-[#008cff] border-b-4 border-[#295adf] p-8 -mt-5 rounded-lg">
+            <div className=" card-background card-background2 bg-white bg-opacity-10 shadow-md shadow-[#008cff] border-b border-[#295adf] p-8 -mt-5 rounded-lg">
               <h2 className=" font-semibold tracking-widest flex justify-center items-center text-white back-shadow2">
                 VS CODE SKILL
               </h2>
