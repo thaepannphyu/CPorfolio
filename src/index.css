@@ -14,16 +14,16 @@
     transition: 1s;
     left: -2px;
     top: 41%;
-    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform: rotate(calc(360deg / 6 * var(--i)));
     transition-delay: calc(0.1s * var(--i));
   }
   .inner {
     transition: 1s;
-    transform: rotate(calc(-360deg / 4 * var(--i)));
+    transform: rotate(calc(-360deg / 6 * var(--i)));
   }
   .innerS {
     transition: 1s;
-    transform: rotate(calc(-245deg / 4 * var(--i)));
+    transform: rotate(calc(-245deg / 6 * var(--i)));
   }
   .innerSpecify {
     transition: 1s;
@@ -34,7 +34,7 @@
     transition: 1s;
     left: -2px;
     top: 41%;
-    transform: rotate(calc(180deg / 3 * var(--i)));
+    transform: rotate(calc(180deg / 5 * var(--i)));
     transition-delay: calc(0.1s * var(--i));
   }
   .rotate {

@@ -33,3 +33,6 @@
   /* border-radius: 100%; */
   background-color: transparent;
 }
+.opacity0 {
+  opacity: 0 !important;
+}
