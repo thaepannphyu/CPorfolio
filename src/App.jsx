@@ -50,30 +50,30 @@ const App = () => {
     // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
     <div className=" relative bg-[rgb(24,24,24)] ">
-      {/* {<Navbar />} */}
+      {<Navbar />}
 
-      {/* <Menu /> */}
-      {/* <section id="0" className=" relative">
-        <Landing />
-      </section> */}
-
+      <Menu />
       <section id="0" className=" relative">
-        <About />
-      </section>
-
-      <section className=" relative">
-        <Education />
+        <Landing />
       </section>
 
       <section id="1" className=" relative">
-        <Skill />
+        <About />
       </section>
 
       <section id="2" className=" relative">
-        <ProjectShow />
+        <Education />
       </section>
 
       <section id="3" className=" relative">
+        <Skill />
+      </section>
+
+      <section id="4" className=" relative">
+        <ProjectShow />
+      </section>
+
+      <section id="5" className=" ">
         <Contact />
       </section>
 

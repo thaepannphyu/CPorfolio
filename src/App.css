@@ -31,10 +31,10 @@ body {
 }
 @media (max-width: 400px) {
   .h1C {
-    font-size: calc(1vw + 1rem);
+    font-size: calc(1vw + 1.2rem);
   }
   .h2C {
-    font-size: calc(0.5vw + 0.9rem);
+    font-size: calc(0.5vw + 1.2rem);
   }
   .pC {
     font-size: calc(0.5vw + 0.8rem);

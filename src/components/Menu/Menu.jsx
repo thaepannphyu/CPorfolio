@@ -31,7 +31,7 @@ const Menu = () => {
     setWindowSize({ width: window.innerWidth, height: window.innerHeight });
     x = windowSize.width - 220;
     xS = windowSize.width - 150;
-    y = windowSize.height - 100;
+    y = windowSize.height - 200;
     ys = windowSize.height - 280;
   };
 
@@ -50,10 +50,15 @@ const Menu = () => {
       defaultPosition={
         windowSize.width > 600 ? { x, y: y * 0.5 } : { x: xS, y: y * 0.5 }
       }
+      // bounds={
+      //   windowSize.width > 600
+      //     ? { top: 10, bottom: y }
+      //     : { top: 20, bottom: ys }
+      // }
       bounds={
         windowSize.width > 600
-          ? { top: 10, bottom: y }
-          : { top: 20, bottom: ys }
+          ? { top: 10, bottom: 700 }
+          : { top: 20, bottom: 500 }
       }>
       <div className=" fixed z-50">
         <div
@@ -85,6 +90,64 @@ const Menu = () => {
           <ul
             className={` max-sm:rotate
              flex justify-center items-center `}>
+            <NavLink
+              to="#0"
+              onClick={() => {
+                dispatch(setActive(0));
+              }}
+              smooth>
+              <li
+                style={{ "--i": 1 }}
+                className={`${
+                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                } parentMenu absolute w-10 h-10  rounded-[50%] flex justify-center items-center`}>
+                <div className="  flex  justify-center flex-col items-center">
+                  <div
+                    className={`${
+                      active == 0 && "selected"
+                    } btn w-10 parentMenu   h-10 bg-black rounded-[50%] flex justify-center items-center`}>
+                    <AiFillHome
+                      className={`${
+                        toogle == true && "md:inner  lg:inner innerS"
+                      }  text-2xl parentMenu  text-cyan-600 back-shadow2`}
+                    />
+                  </div>
+                  <p
+                    className={` childMenu absolute top-[19%] left-[68%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner innerS`}>
+                    Home
+                  </p>
+                </div>
+              </li>
+            </NavLink>
+            <NavLink
+              to="#1"
+              onClick={() => {
+                dispatch(setActive(1));
+              }}
+              smooth>
+              <li
+                style={{ "--i": 1 }}
+                className={`${
+                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                } parentMenu absolute w-10 h-10  rounded-[50%] flex justify-center items-center`}>
+                <div className="  flex  justify-center flex-col items-center">
+                  <div
+                    className={`${
+                      active == 1 && "selected"
+                    } btn w-10 parentMenu   h-10 bg-black rounded-[50%] flex justify-center items-center`}>
+                    <AiFillHome
+                      className={`${
+                        toogle == true && "md:inner  lg:inner innerS"
+                      }  text-2xl parentMenu  text-cyan-600 back-shadow2`}
+                    />
+                  </div>
+                  <p
+                    className={` childMenu absolute top-[19%] left-[68%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner innerS`}>
+                    About
+                  </p>
+                </div>
+              </li>
+            </NavLink>
             <NavLink
               to="#0"
               onClick={() => {
