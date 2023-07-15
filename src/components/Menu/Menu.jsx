@@ -7,7 +7,9 @@ import {
   AiOutlineMail,
   AiOutlineContacts,
   AiFillFolderOpen,
+  AiOutlineUser,
 } from "react-icons/ai";
+import { SlGraduation } from "react-icons/sl";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 // import { HashNavigations as NavLink } from "swiper/modules";
 import "./Menu.css";
@@ -22,6 +24,13 @@ const Menu = () => {
   const [toogle, settoogle] = useState(false);
   const active = useSelector((state) => state.NavLink.value);
   const dispatch = useDispatch();
+  const [scroll, setScroll] = useState(0);
+
+  const scrollHandler = () => {
+    setScroll(window.scrollY);
+    console.log(window.scrollY);
+  };
+  window.addEventListener("scroll", scrollHandler);
 
   let x = windowSize.width - 220;
   let xS = windowSize.width - 150;
@@ -35,11 +44,7 @@ const Menu = () => {
     ys = windowSize.height - 280;
   };
 
-  // console.log(window.innerWidth);
-  useEffect(() => {
-    window.addEventListener("resize", setPosition);
-  }, [windowSize]);
-  // console.log(windowSize.width);
+  window.addEventListener("resize", setPosition);
 
   return (
     <Draggable
@@ -50,22 +55,16 @@ const Menu = () => {
       defaultPosition={
         windowSize.width > 600 ? { x, y: y * 0.5 } : { x: xS, y: y * 0.5 }
       }
-      // bounds={
-      //   windowSize.width > 600
-      //     ? { top: 10, bottom: y }
-      //     : { top: 20, bottom: ys }
-      // }
       bounds={
         windowSize.width > 600
-          ? { top: 10, bottom: 700 }
-          : { top: 20, bottom: 500 }
+          ? { top: 10, bottom: y }
+          : { top: 20, bottom: ys }
       }>
-      <div className=" fixed z-50">
-        <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          className="menu    py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]">
+      <div
+        className={`${
+          scroll > 620 ? "opacity-100" : "opacity-0"
+        } fixed z-50 transition2s`}>
+        <div className="menu    py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]">
           <div
             id="#drag1"
             onClick={() => {
@@ -99,7 +98,9 @@ const Menu = () => {
               <li
                 style={{ "--i": 1 }}
                 className={`${
-                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                  toogle == true
+                    ? "lg:li md:li liHalf opacity-100"
+                    : "  liS  opacity-0"
                 } parentMenu absolute w-10 h-10  rounded-[50%] flex justify-center items-center`}>
                 <div className="  flex  justify-center flex-col items-center">
                   <div
@@ -113,7 +114,7 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={` childMenu absolute top-[19%] left-[68%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner innerS`}>
+                    className={` childMenu text-cyan-600 absolute top-[19%] left-[-144%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner specialRotate`}>
                     Home
                   </p>
                 </div>
@@ -126,53 +127,57 @@ const Menu = () => {
               }}
               smooth>
               <li
-                style={{ "--i": 1 }}
+                style={{ "--i": 2 }}
                 className={`${
-                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                  toogle == true
+                    ? "lg:li md:li liHalf opacity-100"
+                    : "  liS opacity-0"
                 } parentMenu absolute w-10 h-10  rounded-[50%] flex justify-center items-center`}>
                 <div className="  flex  justify-center flex-col items-center">
                   <div
                     className={`${
                       active == 1 && "selected"
                     } btn w-10 parentMenu   h-10 bg-black rounded-[50%] flex justify-center items-center`}>
-                    <AiFillHome
+                    <AiOutlineUser
                       className={`${
                         toogle == true && "md:inner  lg:inner innerS"
                       }  text-2xl parentMenu  text-cyan-600 back-shadow2`}
                     />
                   </div>
                   <p
-                    className={` childMenu absolute top-[19%] left-[68%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner innerS`}>
+                    className={`text-cyan-600 childMenu absolute top-[16%] left-[-133%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner specialRotate`}>
                     About
                   </p>
                 </div>
               </li>
             </NavLink>
             <NavLink
-              to="#0"
+              to="#2"
               onClick={() => {
-                dispatch(setActive(0));
+                dispatch(setActive(2));
               }}
               smooth>
               <li
-                style={{ "--i": 1 }}
+                style={{ "--i": 3 }}
                 className={`${
-                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                  toogle == true
+                    ? "lg:li md:li liHalf opacity-100"
+                    : "  liS opacity-0"
                 } parentMenu absolute w-10 h-10  rounded-[50%] flex justify-center items-center`}>
                 <div className="  flex  justify-center flex-col items-center">
                   <div
                     className={`${
-                      active == 0 && "selected"
+                      active == 2 && "selected"
                     } btn w-10 parentMenu   h-10 bg-black rounded-[50%] flex justify-center items-center`}>
-                    <AiFillHome
+                    <SlGraduation
                       className={`${
                         toogle == true && "md:inner  lg:inner innerS"
                       }  text-2xl parentMenu  text-cyan-600 back-shadow2`}
                     />
                   </div>
                   <p
-                    className={` childMenu absolute top-[19%] left-[68%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner innerS`}>
-                    Home
+                    className={`text-cyan-600 childMenu absolute bottom-[16%] left-[-183%] lg:bottom-[100%] lg:left-[-30%]  md:bottom-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
+                    Education
                   </p>
                 </div>
               </li>
@@ -184,9 +189,11 @@ const Menu = () => {
               }}
               smooth>
               <li
-                style={{ "--i": 2 }}
+                style={{ "--i": 4 }}
                 className={`${
-                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                  toogle == true
+                    ? "lg:li md:li liHalf  opacity-100"
+                    : "  liS opacity-0"
                 }  absolute `}>
                 <div className="parentMenu  flex  justify-center flex-col items-center">
                   <div
@@ -200,27 +207,29 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={` childMenu absolute top-[-70%] left-[4px] md:top-[-64%] md:left-[-17%] lg:top-[-64%] lg:left-[-17%] md:inner lg:inner innerS`}>
+                    className={`text-cyan-600 childMenu  absolute bottom-[50%] left-[-158%] md:bottom-[50%] md:left-[-110%] lg:bottom-[50%] lg:left-[-110%] md:inner lg:inner innerS`}>
                     Contact
                   </p>
                 </div>
               </li>
             </NavLink>
             <NavLink
-              to="#1"
+              to="#4"
               onClick={() => {
-                dispatch(setActive(1));
+                dispatch(setActive(4));
               }}
               smooth>
               <li
-                style={{ "--i": 3 }}
+                style={{ "--i": 5 }}
                 className={`${
-                  toogle == true ? "lg:li md:li liHalf" : " liS"
-                }  absolute `}>
-                <div className=" parentMenu flex justify-center flex-col items-center">
+                  toogle == true
+                    ? "lg:li md:li liHalf   opacity-100"
+                    : " liS opacity-0"
+                }  absolute parentMenu`}>
+                <div className="  flex justify-center flex-col items-center">
                   <div
                     className={`${
-                      active == 1 && "selected"
+                      active == 4 && "selected"
                     }  btn w-10 parentMenu h-10 bg-black rounded-[50%] flex justify-center items-center`}>
                     <AiOutlineContacts
                       className={`${
@@ -229,36 +238,38 @@ const Menu = () => {
                     />
                   </div>
                   <p
-                    className={`childMenu  absolute top-[27%] left-[-100%] md:top-[27%] md:left-[-71%] lg:top-[27%] lg:left-[-71%] md:inner lg:inner innerS`}>
+                    className={`text-cyan-600 childMenu  absolute top-[27%] left-[-100%] md:top-[27%] md:left-[-71%] lg:top-[27%] lg:left-[-71%] md:inner lg:inner textrotateSkill `}>
                     skill
                   </p>
                 </div>
               </li>
             </NavLink>
             <NavLink
-              to="#2"
+              to="#5"
               onClick={() => {
-                dispatch(setActive(2));
+                dispatch(setActive(5));
               }}
               smooth>
               <li
                 className={`${
-                  toogle == true ? "lg:li md:li liHalf" : "  liS"
+                  toogle == true
+                    ? "lg:li md:li liHalf opacity-100"
+                    : "  liS opacity-0"
                 } absolute  `}>
-                <div className="parentMenu  flex justify-center flex-col items-center">
+                <div className=" parentMenu flex justify-center flex-col items-center">
                   <div
                     className={`${
-                      active == 2 && "selected"
+                      active == 5 && "selected"
                     } btn w-10 parentMenu h-10 bg-black rounded-[50%] flex justify-center items-center`}>
                     <AiFillFolderOpen
-                      style={{ "--i": 4 }}
+                      style={{ "--i": 6 }}
                       className={`${
                         toogle == true && "md:inner lg:inner innerSpecify"
                       } text-2xl parentMenu  text-cyan-600 back-shadow2`}
                     />
                   </div>
                   <p
-                    className={`childMenu absolute top-[16%] left-[-154%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
+                    className={`text-cyan-600 childMenu absolute top-[16%] left-[-154%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
                     Projects
                   </p>
                 </div>

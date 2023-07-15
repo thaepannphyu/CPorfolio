@@ -51,6 +51,7 @@ const App = () => {
   return (
     // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
+
     <div className=" relative bg-white dark:bg-[rgb(24,24,24)] ">
       {/* <div className=" flex flex-col absolute top-36 left-20 z-20">
         <input type="checkbox" id="darkMode-toggle" className="box1" />
