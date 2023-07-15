@@ -9,6 +9,8 @@ import Footer from "./components/footer/Footer";
 import Menu from "./Components/Menu/menu";
 import Education from "./components/sections/education/Education";
 import About from "./components/sections/about/About";
+import './components/darkMode/darkMode.css';
+
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -49,8 +51,13 @@ const App = () => {
   return (
     // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
-    <div className=" relative bg-[rgb(24,24,24)] ">
-      <Navbar />
+
+    <div className=" relative bg-white dark:bg-[rgb(24,24,24)] ">
+      {/* <div className=" flex flex-col absolute top-36 left-20 z-20">
+        <input type="checkbox" id="darkMode-toggle" className="box1" />
+        <label onClick={handleThemeSwitch} For="darkMode-toggle" className="box"></label>
+      </div> */}
+      {<Navbar />}
 
       <Menu />
       <section id="0" className=" relative">
