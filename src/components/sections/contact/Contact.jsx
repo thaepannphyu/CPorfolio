@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
                 <button
                   onClick={() => setShow(!show)}
-                  className="form-btn duration-500 text-gray-50 rounded-md font-bold font-sans py-3"
+                  className=" bg-yellow-500 hover:bg-yellow-600 duration-500 text-white rounded-md font-bold font-sans py-3"
                 >
                   Submit
                 </button>
@@ -89,7 +89,7 @@ const Contact = () => {
 
             {/* information  */}
             <div className="flex flex-col mx-4 gap-5">
-              <h1 className="font-sans text-3xl tracking-wider text-yellow-500 font-medium">
+              <h1 className="font-sans text-3xl tracking-wider text-pink-500 font-medium">
                 Portfolio
               </h1>
               <div className="flex flex-col gap-5">
@@ -98,10 +98,10 @@ const Contact = () => {
                     Address :
                   </h1>
                   <div className="flex flex-col gap-1">
-                    <p className=" text-pink-500 font-sans tracking-wider text-sm">
+                    <p className=" text-yellow-500 font-sans tracking-wider text-sm">
                       Myanmar , Yangon
                     </p>
-                    <p className=" text-pink-500 font-sans tracking-wider text-sm">
+                    <p className=" text-yellow-500 font-sans tracking-wider text-sm">
                       North Dagon
                     </p>
                   </div>
@@ -111,12 +111,12 @@ const Contact = () => {
                     Contact me directly :
                   </h1>
                   <div className="flex flex-col gap-1">
-                    <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                      <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
+                    <p className=" text-yellow-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
+                      <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                       +47 333 78 901
                     </p>
-                    <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                      <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
+                    <p className=" text-yellow-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
+                      <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                       american@gmail.com
                     </p>
                   </div>
@@ -129,25 +129,25 @@ const Contact = () => {
                 <div className="flex gap-6 justify-start">
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                   >
                     <AiFillGithub className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                   >
                     <BsFacebook className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                   >
                     <AiFillInstagram className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                   >
                     <SiNetlify className=" text-lg" />
                   </a>
@@ -195,7 +195,7 @@ const Contact = () => {
             data-aos-duration="1000"
             className="flex flex-col mx-4 gap-4"
           >
-            <h1 className="font-sans text-3xl tracking-wider text-yellow-500 font-medium">
+            <h1 className="font-sans text-3xl tracking-wider text-pink-500 font-medium">
               Portfolio
             </h1>
             <div className="flex flex-col gap-4">
@@ -203,10 +203,10 @@ const Contact = () => {
                 <h1 className=" font-sans text-xl mb-1 text-cyan-500 font-medium">
                   Address :
                 </h1>
-                <p className=" text-pink-500 font-sans tracking-wider text-sm">
+                <p className=" text-yellow-500 font-sans tracking-wider text-sm">
                   Myanmar , Yangon
                 </p>
-                <p className=" text-pink-500 font-sans tracking-wider text-sm">
+                <p className=" text-yellow-500 font-sans tracking-wider text-sm">
                   North Dagon
                 </p>
               </div>
@@ -214,12 +214,12 @@ const Contact = () => {
                 <h1 className=" font-sans text-xl mb-2 text-cyan-500 font-medium">
                   Contact me directly :
                 </h1>
-                <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                  <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
+                <p className=" text-yellow-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
+                  <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                   +47 333 78 901
                 </p>
-                <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                  <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
+                <p className=" text-yellow-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
+                  <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                   american@gmail.com
                 </p>
               </div>
@@ -231,25 +231,25 @@ const Contact = () => {
               <div className="flex gap-5 justify-start">
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillGithub className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <BsFacebook className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillInstagram className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <SiNetlify className=" text-lg" />
                 </a>
@@ -294,7 +294,7 @@ const Contact = () => {
               </div>
               <button
                 onClick={() => setShow(!show)}
-                className=" form-btn duration-500 text-gray-50 rounded-md font-bold font-sans py-3"
+                className=" bg-yellow-500 hover:bg-yellow-600 duration-500 text-white rounded-md font-bold font-sans py-3"
               >
                 Submit
               </button>
@@ -348,12 +348,12 @@ const Contact = () => {
             </div>
             <button
               onClick={() => setShow(!show)}
-              className=" form-btn duration-500 text-gray-50 rounded-md font-bold font-sans px-8 py-3"
+              className=" bg-yellow-500 hover:bg-yellow-600 duration-500 text-white rounded-md font-bold font-sans px-8 py-3"
             >
               Submit
             </button>
             <div className="flex flex-col gap-4">
-              <h1 className="font-sans text-3xl tracking-wider text-yellow-500 font-medium text-center">
+              <h1 className="font-sans text-3xl tracking-wider text-pink-500 font-medium text-center">
                 Portfolio
               </h1>
               <div className="flex flex-col gap-2">
@@ -361,10 +361,10 @@ const Contact = () => {
                   Address :
                 </h1>
                 <div className="flex flex-col gap-1">
-                  <p className=" text-pink-500 text-center font-sans tracking-wider text-sm">
+                  <p className=" text-yellow-500 text-center font-sans tracking-wider text-sm">
                     Myanmar , Yangon
                   </p>
-                  <p className=" text-pink-500 text-center font-sans tracking-wider text-sm">
+                  <p className=" text-yellow-500 text-center font-sans tracking-wider text-sm">
                     North Dagon
                   </p>
                 </div>
@@ -374,12 +374,12 @@ const Contact = () => {
                   Contact me directly :
                 </h1>
                 <div className="flex flex-col gap-1">
-                  <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-center">
-                    <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
+                  <p className=" text-yellow-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-center">
+                    <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                     +47 333 78 901
                   </p>
-                  <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-center items-center">
-                    <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
+                  <p className=" text-yellow-500 font-sans tracking-wider text-sm flex gap-2 justify-center items-center">
+                    <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                     american@gmail.com
                   </p>
                 </div>
@@ -392,25 +392,25 @@ const Contact = () => {
               <div className="flex gap-6 justify-center">
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillGithub className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <BsFacebook className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillInstagram className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 duration-500 text-white flex justify-center items-center"
                 >
                   <SiNetlify className=" text-lg" />
                 </a>
