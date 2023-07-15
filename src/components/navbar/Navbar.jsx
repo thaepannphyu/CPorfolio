@@ -7,9 +7,9 @@ const Navbar = () => {
   const active = useSelector((state) => state.NavLink.value);
   const dispatch = useDispatch();
   return (
-    <div className="fixed  z-50 left-0 top-0 right-0 mb-5">
-      <div className=" container mx-auto flex justify-between items-center gap-10">
-        {/* logo */}
+    <>
+      {/* logo */}
+      <div className=" my-4 z-40  fixed top-0 left-0 right-0 container mx-auto flex justify-between items-center gap-10 bg-transparent">
         <NavHashLink
           to="#0"
           smooth
@@ -19,7 +19,7 @@ const Navbar = () => {
           <div
             data-aos="fade-down-right"
             data-aos-duration="1200"
-            className="  shadowBox py-4 rounded w-[20%] flex justify-between items-center">
+            className=" z-50     logo  flex justify-between items-center">
             <div className="  ">
               <p
                 className={`${
@@ -30,12 +30,14 @@ const Navbar = () => {
             </div>
           </div>
         </NavHashLink>
-        {/* menu */}
+      </div>
+      {/* menu */}
+      <div className=" z-50  container mx-auto flex flex-row-reverse justify-between items-center ">
         <div
           data-aos="fade-down-left"
           data-aos-duration="1200"
-          className=" w-[60%] shadowBox py-4 rounded">
-          <ul className=" flex justify-between items-center">
+          className=" w-[60%] hidden md:block lg:block shadowBox py-4 rounded">
+          <ul className=" flex justify-between items-center gap-5">
             <NavHashLink
               to="#0"
               onClick={() => {
@@ -49,7 +51,6 @@ const Navbar = () => {
                 <p> Home</p>
               </li>
             </NavHashLink>
-
             <NavHashLink
               to="#1"
               onClick={() => {
@@ -59,11 +60,12 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
-                Skill
+                className={` ${
+                  active == 1 && " "
+                }btnNav overflow-hidden  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  `}>
+                About
               </li>
             </NavHashLink>
-
             <NavHashLink
               to="#2"
               onClick={() => {
@@ -74,7 +76,7 @@ const Navbar = () => {
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
                 className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
-                Projects
+                Education
               </li>
             </NavHashLink>
 
@@ -87,8 +89,36 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
+                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+                Skill
+              </li>
+            </NavHashLink>
+
+            <NavHashLink
+              to="#4"
+              onClick={() => {
+                dispatch(setActive(4));
+              }}
+              smooth>
+              <li
+                data-aos="fade-down-left"
+                data-aos-duration="1200"
+                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+                Projects
+              </li>
+            </NavHashLink>
+
+            <NavHashLink
+              to="#5"
+              onClick={() => {
+                dispatch(setActive(5));
+              }}
+              smooth>
+              <li
+                data-aos="fade-down-left"
+                data-aos-duration="1200"
                 className={`${
-                  active == 3 && ""
+                  active == 4 && ""
                 } overflow-hidden btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center`}>
                 Contacts
               </li>
@@ -96,7 +126,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

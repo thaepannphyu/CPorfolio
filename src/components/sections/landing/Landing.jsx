@@ -41,7 +41,7 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
-      <div className=" overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+      <div className=" mt-10 lg:mt-0 md:mt-0 overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
@@ -71,7 +71,7 @@ const Landing = () => {
                 </div>
               </div>
               <div className="flex justify-center">
-                <div className=" h-20">
+                <div className=" h-20 w-[70%] md:w-full lg:w-full">
                   <p
                     className=" pC mt-4 flex justify-center text-center "
                     ref={el}></p>
