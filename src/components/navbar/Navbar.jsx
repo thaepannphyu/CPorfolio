@@ -3,6 +3,7 @@ import { NavHashLink } from "react-router-hash-link";
 import "./navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setActive } from "../../Global/NavLinkSlice";
+import DarkMode from "../darkMode/DarkMode";
 const Navbar = () => {
   const active = useSelector((state) => state.NavLink.value);
   const dispatch = useDispatch();
@@ -27,15 +28,16 @@ const Navbar = () => {
           <div
             data-aos="fade-down-right"
             data-aos-duration="1200"
-            className="      logo  flex justify-between items-center">
-            <div className="  ">
+            className="logo flex gap-3 justify-between items-center">
+            <div className="">
               <p
                 className={`${
                   active == 0 && ""
-                } btnNav  rounded-3xl text-white dark:text-black flex justify-center items-center  w-28 h-10`}>
+                } btnNav  rounded-3xl text-black dark:text-white flex justify-center items-center  w-28 h-10`}>
                 Logo
               </p>
             </div>
+          <DarkMode/>
           </div>
         </NavHashLink>
         {/* menu */}
@@ -59,7 +61,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+                className="btnNav  w-28 h-10 rounded-3xl text-white flex justify-center items-center  ">
                 <p> Home</p>
               </li>
             </NavHashLink>
@@ -74,7 +76,7 @@ const Navbar = () => {
                 data-aos-duration="1200"
                 className={` ${
                   active == 1 && " "
-                } btnNav overflow-hidden  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  `}>
+                } btnNav overflow-hidden  w-28 h-10 rounded-3xl text-white flex justify-center items-center  `}>
                 About
               </li>
             </NavHashLink>
@@ -87,7 +89,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+                className="btnNav  w-28 h-10 rounded-3xl text-white flex justify-center items-center  ">
                 Education
               </li>
             </NavHashLink>
@@ -101,7 +103,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+                className="btnNav  w-28 h-10 rounded-3xl text-white flex justify-center items-center  ">
                 Skill
               </li>
             </NavHashLink>
@@ -115,7 +117,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center  ">
+                className="btnNav  w-28 h-10 rounded-3xl text-white flex justify-center items-center  ">
                 Projects
               </li>
             </NavHashLink>
@@ -131,7 +133,7 @@ const Navbar = () => {
                 data-aos-duration="1200"
                 className={`${
                   active == 4 && ""
-                } overflow-hidden btnNav  w-28 h-10 rounded-3xl text-white dark:text-black flex justify-center items-center`}>
+                } overflow-hidden btnNav  w-28 h-10 rounded-3xl text-white flex justify-center items-center`}>
                 Contacts
               </li>
             </NavHashLink>
