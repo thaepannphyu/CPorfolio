@@ -44,7 +44,7 @@ const Navbar = () => {
           data-aos="fade-down-left"
           data-aos-duration="1200"
           className={`${
-            scroll > 600 ? " opacity0" : "opacity-100"
+            scroll > 500 ? " opacity0" : "opacity-100"
           } w-[60%] hidden bg-black lg:block md:block transition2s shadowBox py-4 rounded`}>
           <ul
             className={`${

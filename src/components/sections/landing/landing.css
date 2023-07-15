@@ -49,6 +49,12 @@
 .text {
   font-size: 100px;
   font-family: Arial Black;
-  dominant-baseline: central;
+
   text-anchor: middle;
+}
+.background {
+  background-image: url("../../../assets/bg1.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
 }
