@@ -44,6 +44,7 @@ const App = () => {
       </section>
 
       <Footer className=" relative" />
+      
     </div>
   );
 };

@@ -7,12 +7,12 @@ AOS.init();
 
 const Education = () => {
   return (
-    <div className=" font-sans w-[90%] mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%]">
+    <div className=" font-sans w-[90%] my-10 mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%]">
       <div
         data-aos="fade-up"
         data-aos-duration="3000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%] mb-10 ">
-        <h2 className=" uppercase text-2xl font-bold tracking-widest mb-4 text-[#00ffff]">
+        <h2 className=" uppercase text-center md:text-left text-2xl font-bold tracking-widest mb-4 text-[#58bdbd] dark:text-[#00ffff]">
           Education
         </h2>
         <Timeline className=" text-pink-500" color="indigo" active={4}>
@@ -50,7 +50,7 @@ const Education = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%]">
-        <h2 className=" uppercase text-2xl font-semibold tracking-widest mb-4 text-[#e1f85b]">
+        <h2 className=" uppercase text-center md:text-left text-2xl font-semibold tracking-widest mb-4 text-[#c5d664] dark:text-[#e1f85b]">
           Experience
         </h2>
         <Timeline color="indigo" active={3}>
