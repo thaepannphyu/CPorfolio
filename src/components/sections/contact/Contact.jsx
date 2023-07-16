@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <>
       {/* laptop view */}
-      <div className="flex w-[100%] relative bg-[rgb(20,20,20)] max-[899px]:hidden">
+      <div className="flex w-[100%] relative bg-[rgb(20,20,20)] max-[899px]:hidden  mt-28">
         {/* left side */}
         <div
           className={`${
