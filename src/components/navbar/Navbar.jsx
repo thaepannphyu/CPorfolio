@@ -6,18 +6,18 @@ import { setActive } from "../../Global/NavLinkSlice";
 const Navbar = () => {
   const active = useSelector((state) => state.NavLink.value);
   const dispatch = useDispatch();
-  const [scroll, setScroll] = useState(0);
+  // const [scroll, setScroll] = useState(0);
 
-  const scrollHandler = () => {
-    setScroll(window.scrollY);
-    console.log(window.scrollY);
-  };
-  window.addEventListener("scroll", scrollHandler);
+  // const scrollHandler = () => {
+  //   setScroll(window.scrollY);
+  //   console.log(window.scrollY);
+  // };
+  // window.addEventListener("scroll", scrollHandler);
 
   return (
-    <>
+    <div className="z-40 py-4 ">
       {/* logo */}
-      <div className="  z-40 my-4 fixed  left-0 right-0 container mx-auto flex justify-between items-center gap-10 bg-transparent">
+      <div className=" container mx-auto flex justify-between items-center gap-10 bg-transparent">
         <NavHashLink
           to="#0"
           smooth
@@ -39,17 +39,15 @@ const Navbar = () => {
           </div>
         </NavHashLink>
         {/* menu */}
-        {/*  */}
+        {/*  ${
+            scroll > 500 ? " opacity0" : "opacity-100"
+          } */}
         <div
           data-aos="fade-down-left"
           data-aos-duration="1200"
-          className={`${
-            scroll > 500 ? " opacity0" : "opacity-100"
-          } w-[60%] hidden bg-black lg:block md:block transition2s shadowBox py-4 rounded`}>
+          className={`w-[60%] hidden bg-black lg:block md:block transition2s shadowBox py-4 rounded`}>
           <ul
-            className={`${
-              scroll > 600 ? " opacity-0" : "opacity-100"
-            }  transition2s flex justify-between items-center gap-5`}>
+            className={`  transition2s flex justify-between items-center gap-5`}>
             <NavHashLink
               to="#0"
               onClick={() => {
@@ -138,7 +136,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

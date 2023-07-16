@@ -13,6 +13,7 @@ import resume from "../../../assets/resume.pdf";
 import Svg from "./svg";
 import cv from "../../../assets/cv.png";
 import "../skill/skill.css";
+import Navbar from "../../navbar/Navbar";
 
 const Landing = () => {
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
@@ -41,6 +42,7 @@ const Landing = () => {
         muted
         loop
         id="myVideo"></video> */}
+      <Navbar />
 
       <div className="   overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
         {/* <iframe
@@ -82,22 +84,22 @@ const Landing = () => {
               <div
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className=" hover:scale-110 transition2s flex justify-center items-center animate__animated animate__rubberBand">
-                <div className="btn-L scale-[0.6] md:scale-75 lg:scale-100  gap-3 shadow bgTransparent">
+                className=" hover:scale-120 transition2s flex justify-center items-center animate__animated animate__rubberBand">
+                <div className="btn-L  scale-[0.6] md:scale-75 lg:scale-100  gap-3 shadow bgTransparent">
                   <a
                     href="https://www.facebook.com/profile.php?id=100038518265438"
                     target="_blank">
-                    <SiFacebook className="hover:scale-110 transition2s inline text-3xl text-blue-900 text-shadow" />
+                    <SiFacebook className="hover:scale-110  transition-all inline text-3xl text-blue-900 text-shadow" />
                   </a>
                   <div
-                    className=" hover:scale-110 transition2s"
+                    className=" hover:scale-110 transition-all"
                     onClick={() => {
                       setSlowTransitionOpened(true);
                     }}>
                     <FaFilePdf className=" inline text-3xl text-rose-400 text-shadow" />
                   </div>
                   <a href={resume} download>
-                    <div className=" hover:text-black transition2s btn-S bg-violet-900 hover:bg-slate-500 inline px-5 py-3 rounded-3xl">
+                    <div className=" hover:text-black transition-all btn-S bg-violet-900 hover:bg-slate-500 inline px-5 py-3 rounded-3xl">
                       DownLoad CV
                     </div>
                   </a>
