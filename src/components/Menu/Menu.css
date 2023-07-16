@@ -12,7 +12,6 @@
 }
 .childMenu:hover {
   opacity: 0;
-
 }
 .selected {
   background-color: #c029f03d !important;
@@ -63,4 +62,11 @@
 .handle {
   background-color: black !important;
   z-index: 100 !important;
+}
+.specialRotate {
+  transform: rotate(357deg);
+  transition: 2s;
+}
+.textrotateSkill {
+  transform: rotate(180deg);
 }

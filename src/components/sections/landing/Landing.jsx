@@ -13,6 +13,7 @@ import resume from "../../../assets/resume.pdf";
 import Svg from "./svg";
 import cv from "../../../assets/cv.png";
 import "../skill/skill.css";
+
 const Landing = () => {
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
   const el = useRef();
@@ -41,7 +42,7 @@ const Landing = () => {
         loop
         id="myVideo"></video> */}
 
-      <div className=" overflow-hidden  h-screen flex  justify-center items-center  relative dark:bg-slate-50">
+      <div className="   overflow-hidden  h-screen flex  justify-center items-center  relative ">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
@@ -50,7 +51,7 @@ const Landing = () => {
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
 
         {/*  */}
-        <div className="  container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap  background-clip shadow-lg">
+        <div className="  container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
             <div className=" p-4 overflow-hidden flex justify-center items-center flex-col">
               <div
@@ -71,7 +72,7 @@ const Landing = () => {
                 </div>
               </div>
               <div className="flex justify-center">
-                <div className=" h-20">
+                <div className=" h-20 w-[70%] md:w-full lg:w-full">
                   <p
                     className=" pC mt-4 flex justify-center text-center "
                     ref={el}></p>

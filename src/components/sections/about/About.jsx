@@ -11,15 +11,15 @@ AOS.init();
 const About = () => {
   return (
     <div>
-        <div className=' flex justify-center h-screen font-sans'>
+        <div className=' flex justify-center py-20 font-sans'>
         <div className=' w-[90%] mx-10 flex max-md:flex-col justify-between items-center max-xl:gap-10'>
             {/* image div  */}
             <div
             data-aos="zoom-in"
             data-aos-duration="2000"
             className=' w-[40%] max-md:w-[90%] pl-10 max-xl:pl-0 flex'>
-                <div className=' max-md:w-[300px] max-md:h-[380px]  w-[350px] h-[400px] bg-yellow-400 img-shadow'>
-                    <img src={kzt} className=' max-md:w-[300px]  max-md:h-[380px] w-[350px] h-[400px] object-cover' alt="" />
+                <div className=' max-[500px]:w-[200px] max-[500px]:h-[300px] max-md:w-[300px] max-md:h-[380px]  w-[350px] h-[400px] bg-yellow-400 img-shadow'>
+                    <img src={kzt} className=' max-[500px]:w-[200px] max-[500px]:h-[300px] max-md:w-[300px]  max-md:h-[380px] w-[350px] h-[400px] object-cover' alt="" />
                 </div>
             </div>
 
@@ -41,17 +41,17 @@ const About = () => {
               <div className="flex gap-6">
                 <a
                   href="#"
-                  className=" w-9 h-9 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
+                  className=" w-9 h-9 rounded-full form-btn duration-500 text-white flex justify-center items-center">
                   <AiFillGithub className=" text-xl" />
                 </a>
                 <a
                   href="#"
-                  className=" w-9 h-9 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
+                  className=" w-9 h-9 rounded-full form-btn duration-500 text-white flex justify-center items-center">
                   <BsFacebook className=" text-xl" />
                 </a>
                 <a
                   href="#"
-                  className=" w-9 h-9 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
+                  className=" w-9 h-9 rounded-full form-btn duration-500 text-white flex justify-center items-center">
                   <AiFillInstagram className=" text-xl" />
                 </a>
               </div>

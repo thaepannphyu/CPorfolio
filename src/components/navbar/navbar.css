@@ -15,17 +15,24 @@
   border: 2px solid #c029f03d;
   background-color: transparent;
 }
-.textMovable {
+/* .textMovable {
   animation: textMove 2s linear infinite;
 }
 @keyframes textMove {
   from {
-    margin-left: 0px;
+    transform: translateX(0);
   }
   to {
-    margin-left: 200px;
+    transform: translateX(50%);
   }
-}
+} */
 .BgWater {
   background-color: rgba(216, 100, 237, 0.505);
+}
+.logo {
+  /* border-radius: 100%; */
+  background-color: transparent;
+}
+.opacity0 {
+  opacity: 0 !important;
 }
