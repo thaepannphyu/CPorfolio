@@ -18,7 +18,7 @@ const Navbar = () => {
   const menuBarger = useSelector((state) => state.NavLink.menuBarger);
   // console.log(menuBarger);
   return (
-    <div className="z-40 py-4 absolute top-0 left-0 right-0 ">
+    <div>
       {/* logo */}
       <div className=" container mx-auto flex justify-between items-center gap-10 bg-transparent">
         <NavHashLink

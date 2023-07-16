@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import newLeft from "../../../assets/contactPhoto/new-left.jpg";
-import newRight from "../../../assets/contactPhoto/new-right.jpg";
+import React, { useEffect, useState } from "react";
+import darkLeft from "../../../assets/contactPhoto/new-left.jpg";
+import lightLeft from "../../../assets/contactPhoto/white-left.jpg";
+import darkRight from "../../../assets/contactPhoto/new-right.jpg";
+import lightRight from "../../../assets/contactPhoto/white-right.jpg";
 import "./contact.css";
 import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
@@ -14,10 +16,15 @@ AOS.init();
 
 const Contact = () => {
   const [show, setShow] = useState(false);
+  let image = localStorage?.getItem("theme");
   return (
     <>
       {/* laptop view */}
-      <div className="flex w-[100%] relative bg-[rgb(20,20,20)] max-[899px]:hidden">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="flex w-[100%] relative bg-gray-200 dark:bg-[rgb(20,20,20)] max-[899px]:hidden"
+      >
         {/* left side */}
         <div
           className={`${
@@ -25,7 +32,7 @@ const Contact = () => {
           } relative w-[50%] h-[600px]`}
         >
           <img
-            src={newLeft}
+            src={image === "dark" ? darkLeft : lightLeft}
             alt=""
             className=" h-[600px] w-full object-cover"
           />
@@ -53,30 +60,36 @@ const Contact = () => {
                 <div className="form1">
                   <input
                     type="text"
-                    className="input"
+                    className="input text-black dark:text-white"
                     autoComplete="off"
                     placeholder=" "
                   />
-                  <label className="label">Name</label>
+                  <label className="label1 text-black dark:text-white bg-gray-200 dark:bg-[rgb(20,20,20)]">
+                    Name
+                  </label>
                 </div>
                 <div className="form1">
                   <input
                     type="text"
-                    className="input"
+                    className="input text-black dark:text-white"
                     autoComplete="off"
                     placeholder=" "
                   />
-                  <label className="label">Email</label>
+                  <label className="label1 text-black dark:text-white bg-gray-200 dark:bg-[rgb(20,20,20)]">
+                    Email
+                  </label>
                 </div>
                 <div className="form2">
                   <textarea
-                    className="input"
+                    className="input text-black dark:text-white"
                     placeholder=" "
                     autoComplete="off"
                     cols="30"
                     rows="5"
                   ></textarea>
-                  <label className="label">Message</label>
+                  <label className="label1 text-black dark:text-white bg-gray-200 dark:bg-[rgb(20,20,20)]">
+                    Message
+                  </label>
                 </div>
                 <button
                   onClick={() => setShow(!show)}
@@ -164,7 +177,7 @@ const Contact = () => {
           } relative w-[50%] h-[600px]`}
         >
           <img
-            src={newRight}
+            src={image === "dark" ? darkRight : lightRight}
             alt=""
             className=" h-[600px] w-full object-cover"
           />
@@ -184,7 +197,7 @@ const Contact = () => {
         <h1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="ipad text-center text-breathe"
+          className="ipad text-center"
         >
           Get in touch
         </h1>
@@ -267,30 +280,36 @@ const Contact = () => {
               <div className="form1">
                 <input
                   type="text"
-                  className="input"
+                  className="input text-black dark:text-white"
                   autoComplete="off"
                   placeholder=" "
                 />
-                <label className="label">Name</label>
+                <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">
+                  Name
+                </label>
               </div>
               <div className="form1">
                 <input
                   type="text"
-                  className="input"
+                  className="input text-black dark:text-white"
                   autoComplete="off"
                   placeholder=" "
                 />
-                <label className="label">Email</label>
+                <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">
+                  Email
+                </label>
               </div>
               <div className="form2">
                 <textarea
-                  className="input"
+                  className="input text-black dark:text-white"
                   placeholder=" "
                   autoComplete="off"
                   cols="30"
                   rows="5"
                 ></textarea>
-                <label className="label">Message</label>
+                <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">
+                  Message
+                </label>
               </div>
               <button
                 onClick={() => setShow(!show)}
@@ -308,7 +327,7 @@ const Contact = () => {
         <h1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="ph mx-5 text-center text-breathe"
+          className="ph mx-5 text-center"
         >
           Get in touch
         </h1>
@@ -321,30 +340,30 @@ const Contact = () => {
             <div className="form1">
               <input
                 type="text"
-                className="input"
+                className="input text-black dark:text-white"
                 autoComplete="off"
                 placeholder=" "
               />
-              <label className="label">Name</label>
+              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">Name</label>
             </div>
             <div className="form1">
               <input
                 type="text"
-                className="input"
+                className="input text-black dark:text-white"
                 autoComplete="off"
                 placeholder=" "
               />
-              <label className="label">Email</label>
+              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">Email</label>
             </div>
             <div className="form2">
               <textarea
-                className="input"
+                className="input text-black dark:text-white"
                 placeholder=" "
                 autoComplete="off"
                 cols="30"
                 rows="5"
               ></textarea>
-              <label className="label">Message</label>
+              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">Message</label>
             </div>
             <button
               onClick={() => setShow(!show)}
