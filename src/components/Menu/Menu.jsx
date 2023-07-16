@@ -78,13 +78,13 @@ const Menu = () => {
               id="#drag2"
               className={`lg:text-2xl md:text-lg  transition-all absolute ${
                 toogle == true ? " opacity-0" : " "
-              } dark:text-cyan-600 text-bg-violet-200  back-shadow3`}
+              } dark:text-cyan-600 text-cyan-400  back-shadow8`}
             />
 
             <AiOutlineClose
               className={`lg:text-2xl md:text-lg transition-all absolute ${
                 toogle == false ? " opacity-0" : ""
-              } dark:text-cyan-600 text-bg-violet-200  back-shadow3 `}
+              } dark:text-cyan-600 text-cyan-400  back-shadow8 `}
             />
           </div>
           <ul
@@ -111,11 +111,11 @@ const Menu = () => {
                     <AiFillHome
                       className={`${
                         toogle == true && "md:inner  lg:inner innerS"
-                      }  text-2xl parentMenu  dark:text-cyan-600 text-bg-violet-200 back-shadow3`}
+                      }  text-2xl parentMenu  dark:text-cyan-600  text-cyan-400 back-shadow8`}
                     />
                   </div>
                   <p
-                    className={` childMenu dark:text-cyan-600 text-bg-violet-200 absolute top-[19%] left-[-144%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner specialRotate`}>
+                    className={` childMenu dark:text-cyan-600  text-cyan-400 absolute top-[19%] left-[-144%] md:top-[-14%] lg:top-[-14%] md:left-[-96%] lg:left-[-96%] md:inner lg:inner specialRotate`}>
                     Home
                   </p>
                 </div>
@@ -138,15 +138,15 @@ const Menu = () => {
                   <div
                     className={`${
                       active == 1 && "selected"
-                    } btn w-10 parentMenu   h-10 bg-pink-200 dark:bg-black  rounded-[50%] flex justify-center items-center`}>
+                    } btn  w-10 parentMenu   h-10 bg-pink-200 dark:bg-black  rounded-[50%] flex justify-center items-center`}>
                     <AiOutlineUser
                       className={`${
                         toogle == true && "md:inner  lg:inner innerS"
-                      }  text-2xl parentMenu  dark:text-cyan-600 text-bg-violet-200 back-shadow3`}
+                      }  text-2xl parentMenu  dark:text-cyan-600 text-cyan-400 back-shadow8`}
                     />
                   </div>
                   <p
-                    className={`dark:text-cyan-600 text-bg-violet-200 childMenu absolute top-[16%] left-[-133%] md:top-[19%] lg:top-[19%] md:left-[68%] lg:left-[68%] md:inner lg:inner specialRotate`}>
+                    className={`dark:text-cyan-600 text-cyan-400 childMenu absolute top-[16%] left-[-133%] md:top-[69%] lg:top-[69%] md:left-[-89%] lg:left-[-89%] md:inner lg:inner specialRotate`}>
                     About
                   </p>
                 </div>
@@ -173,11 +173,11 @@ const Menu = () => {
                     <SlGraduation
                       className={`${
                         toogle == true && "md:inner  lg:inner innerS"
-                      }  text-2xl parentMenu  dark:text-cyan-600 text-bg-violet-200 back-shadow3`}
+                      }  text-2xl parentMenu  dark:text-cyan-600 text-cyan-400 back-shadow8`}
                     />
                   </div>
                   <p
-                    className={`dark:text-cyan-600 text-bg-violet-200 childMenu absolute bottom-[16%] left-[-183%] lg:bottom-[100%] lg:left-[-30%]  md:bottom-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
+                    className={`dark:text-cyan-600 text-cyan-400 childMenu absolute bottom-[16%] left-[-183%] lg:bottom-[100%] lg:left-[-30%]  md:bottom-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
                     Education
                   </p>
                 </div>
@@ -204,11 +204,11 @@ const Menu = () => {
                     <AiFillFolderOpen
                       className={`${
                         toogle == true && "md:inner lg:inner innerS"
-                      } text-2xl parentMenu  dark:text-cyan-600 text-bg-violet-200 back-shadow3`}
+                      } text-2xl parentMenu  dark:text-cyan-600 text-cyan-400 back-shadow8`}
                     />
                   </div>
                   <p
-                    className={`dark:text-cyan-600 text-bg-violet-200 childMenu  absolute bottom-[50%] left-[-158%] md:bottom-[50%] md:left-[-110%] lg:bottom-[50%] lg:left-[-110%] md:inner lg:inner innerS`}>
+                    className={`dark:text-cyan-600 text-cyan-400 childMenu  absolute bottom-[40%] left-[-103%] md:bottom-[60%] md:left-[-69%] lg:bottom-[60%] lg:left-[-69%] md:inner lg:inner innerS`}>
                     Skill
                   </p>
                 </div>
@@ -235,11 +235,11 @@ const Menu = () => {
                     <AiOutlineContacts
                       className={`${
                         toogle == true && "md:inner lg:inner innerS"
-                      } text-2xl parentMenu  dark:text-cyan-600 text-bg-violet-200 back-shadow3`}
+                      } text-2xl parentMenu  dark:text-cyan-600 text-cyan-400 back-shadow8`}
                     />
                   </div>
                   <p
-                    className={`dark:text-cyan-600 text-bg-violet-200 childMenu  absolute top-[27%] left-[-100%] md:top-[27%] md:left-[-71%] lg:top-[27%] lg:left-[-71%] md:inner lg:inner textrotateSkill `}>
+                    className={`dark:text-cyan-600 text-cyan-400 childMenu  absolute top-[16%] left-[-180%] md:top-[63%] md:left-[-104%] lg:top-[63%] lg:left-[-104%] md:inner lg:inner textrotateSkill `}>
                     Projects
                   </p>
                 </div>
@@ -266,11 +266,11 @@ const Menu = () => {
                       style={{ "--i": 6 }}
                       className={`${
                         toogle == true && "md:inner lg:inner innerSpecify"
-                      } text-2xl parentMenu  dark:text-cyan-600 text-bg-violet-200 back-shadow3`}
+                      } text-2xl parentMenu  dark:text-cyan-600 text-cyan-400 back-shadow8`}
                     />
                   </div>
                   <p
-                    className={`dark:text-cyan-600 text-bg-violet-200 childMenu absolute top-[16%] left-[-154%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
+                    className={`dark:text-cyan-600 text-cyan-400 childMenu absolute top-[16%] left-[-189%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
                     Contacts
                   </p>
                 </div>

@@ -61,6 +61,13 @@
       rgba(255, 141, 141, 0.3) 0px 30px 60px -30px,
       rgba(21, 135, 249, 0.35) 0px -2px 6px 0px inset;
   } */
+  .bgTransparent {
+    background-color: #ffffff14;
+  }
+
+  .containerBg {
+    background-color: rgb(248, 245, 252);
+  }
 }
 
 /***************************************************

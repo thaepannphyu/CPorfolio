@@ -53,7 +53,7 @@ const Landing = () => {
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
 
         {/*  */}
-        <div className="  container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap">
+        <div className=" shadow dark:shadow-none  dark:bg-transparent container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
             <div className=" p-4 overflow-hidden flex justify-center items-center flex-col">
               <div
@@ -85,7 +85,7 @@ const Landing = () => {
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 className=" hover:scale-120 transition2s flex justify-center items-center animate__animated animate__rubberBand">
-                <div className="btn-L  scale-[0.6] md:scale-75 lg:scale-100  gap-3 shadow bgTransparent">
+                <div className="btn-L  scale-[0.6] md:scale-75 lg:scale-100  gap-3 shadow dark:bgTransparent bg-pink-200  ">
                   <a
                     href="https://www.facebook.com/profile.php?id=100038518265438"
                     target="_blank">
@@ -99,7 +99,7 @@ const Landing = () => {
                     <FaFilePdf className=" inline text-3xl text-rose-400 text-shadow" />
                   </div>
                   <a href={resume} download>
-                    <div className=" hover:text-black transition-all btn-S bg-violet-900 hover:bg-slate-500 inline px-5 py-3 rounded-3xl">
+                    <div className=" hover:text-black hover:text-lg transition-all btn-S dark:bg-violet-900  bg-violet-400 hover:bg-slate-500 inline px-5 py-3 rounded-3xl">
                       DownLoad CV
                     </div>
                   </a>
