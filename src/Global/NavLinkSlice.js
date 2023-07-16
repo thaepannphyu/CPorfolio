@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   value: 0,
+  menuBarger: false,
 };
 
 export const NavLinkSlice = createSlice({
@@ -15,10 +16,13 @@ export const NavLinkSlice = createSlice({
       // immutable state based off those changes
       state.value = payload;
     },
+    setMenu: (state, { payload }) => {
+      state.menuBarger = payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setActive } = NavLinkSlice.actions;
+export const { setActive, setMenu } = NavLinkSlice.actions;
 
 export default NavLinkSlice.reducer;

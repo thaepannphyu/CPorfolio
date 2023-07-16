@@ -45,7 +45,8 @@ const Menu = () => {
   };
 
   window.addEventListener("resize", setPosition);
-
+  const menuBarger = useSelector((state) => state.NavLink.menuBarger);
+  // console.log(scroll > 50 || menuBarger == true);
   return (
     <Draggable
       axis="y"
@@ -63,7 +64,7 @@ const Menu = () => {
       <div className={`fixed z-50 `}>
         <div
           className={`${
-            scroll > 50 ? "opacity-100" : "opacity-0"
+            scroll > 50 || menuBarger == true ? " opacity-100 " : " opacity-0"
           }  menu  transition2s  py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]`}>
           <div
             id="#drag1"
