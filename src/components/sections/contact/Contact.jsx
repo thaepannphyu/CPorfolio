@@ -184,7 +184,7 @@ const Contact = () => {
         <h1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="ipad text-center"
+          className="ipad text-center text-breathe"
         >
           Get in touch
         </h1>
@@ -308,7 +308,7 @@ const Contact = () => {
         <h1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="ph mx-5 text-center"
+          className="ph mx-5 text-center text-breathe"
         >
           Get in touch
         </h1>
@@ -379,7 +379,7 @@ const Contact = () => {
                     +47 333 78 901
                   </p>
                   <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-center items-center">
-                    <MdMarkEmailRead className=" text-lg text-yell-500" />{" "}
+                    <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                     american@gmail.com
                   </p>
                 </div>

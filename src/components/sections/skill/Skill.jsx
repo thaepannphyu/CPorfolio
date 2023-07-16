@@ -11,7 +11,7 @@ AOS.init();
 
 const Skill = () => {
   return (
-    <div className=" py-8 font-sans w-[90%] mx-auto ">
+    <div className=" py-8 font-sans w-[96%] mx-auto ">
       <h1
         data-aos="zoom-in"
         data-aos-duration="1000"
@@ -29,7 +29,7 @@ const Skill = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           className=" px-4 max-w-sm group mb-16 ">
-          <div className="flex h-full p-8 flex-col relative">
+          <div className="flex p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-orange-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <AiOutlineHtml5 />
             </p>

@@ -49,7 +49,7 @@ const Menu = () => {
   return (
     <Draggable
       axis="y"
-      handle=".handle"
+      // handle=".handle"
       defaultClassNameDragging="drag"
       defaultClassNameDragged="dragend"
       defaultPosition={
@@ -63,7 +63,7 @@ const Menu = () => {
       <div className={`fixed z-50 `}>
         <div
           className={`${
-            scroll > 620 ? "opacity-100" : "opacity-0"
+            scroll > 50 ? "opacity-100" : "opacity-0"
           }  menu  transition2s  py-1 bg-transparent flex flex-col  justify-center items-center h-[200px] w-[200px]`}>
           <div
             id="#drag1"
@@ -72,7 +72,7 @@ const Menu = () => {
             }}
             className={`${
               toogle == true ? " " : " md:scale-125 lg:scale-125 scale-110"
-            } handle relative z-40  w-10 h-10 bg-black parentMenu  transition2s shadow rounded-[50%] flex justify-center items-center`}>
+            }  relative z-40  w-10 h-10 bg-black parentMenu  transition2s shadow rounded-[50%] flex justify-center items-center`}>
             <AiOutlineMenu
               id="#drag2"
               className={`lg:text-2xl md:text-lg  transition-all absolute ${
