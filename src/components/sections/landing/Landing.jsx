@@ -76,7 +76,7 @@ const Landing = () => {
               <div className="flex justify-center">
                 <div className=" h-20 w-[70%] md:w-full lg:w-full">
                   <p
-                    className=" pC mt-4 flex justify-center text-center "
+                    className=" pC mt-4 flex justify-center text-center dark:text-white text-black  "
                     ref={el}></p>
                 </div>
               </div>

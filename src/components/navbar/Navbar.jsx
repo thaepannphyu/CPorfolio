@@ -18,9 +18,9 @@ const Navbar = () => {
   const menuBarger = useSelector((state) => state.NavLink.menuBarger);
   // console.log(menuBarger);
   return (
-    <div className="z-40 py-4 absolute top-0 left-0 right-0 ">
+    <div className="z-40 * py-4 absolute top-0 left-0 right-0 ">
       {/* logo */}
-      <div className=" container mx-auto flex justify-between items-center gap-10 bg-transparent">
+      <div className=" container  mx-auto flex justify-between items-center gap-10 ">
         <NavHashLink
           to="#0"
           smooth
@@ -35,7 +35,7 @@ const Navbar = () => {
               <p
                 className={`${
                   active == 0 && ""
-                } btnNav  rounded-3xl text-black dark:text-white flex justify-center items-center  w-28 h-10`}>
+                } btnNav  rounded-3xl text-black dark:text-white flex justify-center items-center  px-4 h-10`}>
                 Logo
               </p>
             </div>
@@ -49,9 +49,9 @@ const Navbar = () => {
         <div
           data-aos="fade-down-left"
           data-aos-duration="1200"
-          className={`lg:w-[60%] md:w-[80%] hidden  lg:block md:block transition2s shadowBox py-4 rounded`}>
+          className={`lg:w-[60%] md:w-[80%] hidden bg-violet-200 dark:bg-transparent  lg:block md:block transition2s shadowBox py-4 rounded`}>
           <ul
-            className={`  transition2s flex justify-between items-center gap-5`}>
+            className={`  transition2s flex justify-between pC items-center md:gap-3 lg:gap-5 `}>
             <NavHashLink
               to="#0"
               onClick={() => {
@@ -61,7 +61,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  px-4 h-10 rounded-3xl text-white flex justify-center items-center  ">
+                className="btnNav text-black dark:text-white pC  px-4 h-10 rounded-3xl  flex justify-center items-center  ">
                 <p> Home</p>
               </li>
             </NavHashLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 data-aos-duration="1200"
                 className={` ${
                   active == 1 && " "
-                } btnNav overflow-hidden px-4 h-10 rounded-3xl text-white flex justify-center items-center  `}>
+                } btnNav text-black dark:text-white  pC overflow-hidden px-4 h-10 rounded-3xl  flex justify-center items-center  `}>
                 About
               </li>
             </NavHashLink>
@@ -89,7 +89,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav px-4 h-10 rounded-3xl text-white flex justify-center items-center  ">
+                className="btnNav text-black dark:text-white  pC px-4 h-10 rounded-3xl  flex justify-center items-center  ">
                 Education
               </li>
             </NavHashLink>
@@ -103,7 +103,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  px-4 h-10 rounded-3xl text-white flex justify-center items-center  ">
+                className="btnNav text-black dark:text-white pC  px-4 h-10 rounded-3xl  flex justify-center items-center  ">
                 Skill
               </li>
             </NavHashLink>
@@ -117,7 +117,7 @@ const Navbar = () => {
               <li
                 data-aos="fade-down-left"
                 data-aos-duration="1200"
-                className="btnNav  px-4 h-10 rounded-3xl text-white flex justify-center items-center  ">
+                className="btnNav text-black dark:text-white  pC  px-4 h-10 rounded-3xl  flex justify-center items-center  ">
                 Projects
               </li>
             </NavHashLink>
@@ -133,7 +133,7 @@ const Navbar = () => {
                 data-aos-duration="1200"
                 className={`${
                   active == 4 && ""
-                } overflow-hidden btnNav  px-4 h-10 rounded-3xl text-white flex justify-center items-center`}>
+                } text-black dark:text-white pC  overflow-hidden btnNav  px-4 h-10 rounded-3xl  flex justify-center items-center`}>
                 Contacts
               </li>
             </NavHashLink>
@@ -144,7 +144,7 @@ const Navbar = () => {
           data-aos="fade-down-left"
           data-aos-duration="1200"
           onClick={() => dispatch(setMenu(!menuBarger))}
-          className={`px-4 block  lg:hidden md:hidden transition2s shadowBox py-4 rounded`}>
+          className={`px-4 block bg-violet-50 dark:bg-transparent  lg:hidden md:hidden transition2s shadowBox py-4 rounded`}>
           <div>
             <CgMenuRight className=" inline hover:text-rose-800 text-3xl text-rose-400 text-shadow" />
           </div>
