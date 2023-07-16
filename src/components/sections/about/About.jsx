@@ -41,17 +41,17 @@ const About = () => {
               <div className="flex gap-6">
                 <a
                   href="#"
-                  className=" w-9 h-9 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
+                  className=" w-9 h-9 rounded-full form-btn duration-500 text-white flex justify-center items-center">
                   <AiFillGithub className=" text-xl" />
                 </a>
                 <a
                   href="#"
-                  className=" w-9 h-9 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
+                  className=" w-9 h-9 rounded-full form-btn duration-500 text-white flex justify-center items-center">
                   <BsFacebook className=" text-xl" />
                 </a>
                 <a
                   href="#"
-                  className=" w-9 h-9 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center">
+                  className=" w-9 h-9 rounded-full form-btn duration-500 text-white flex justify-center items-center">
                   <AiFillInstagram className=" text-xl" />
                 </a>
               </div>

@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
                 <button
                   onClick={() => setShow(!show)}
-                  className="form-btn duration-500 text-gray-50 rounded-md font-bold font-sans py-3"
+                  className="form-btn duration-500 text-white rounded-md font-bold font-sans py-3"
                 >
                   Submit
                 </button>
@@ -112,11 +112,11 @@ const Contact = () => {
                   </h1>
                   <div className="flex flex-col gap-1">
                     <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                      <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
+                      <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                       +47 333 78 901
                     </p>
                     <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                      <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
+                      <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                       american@gmail.com
                     </p>
                   </div>
@@ -129,25 +129,25 @@ const Contact = () => {
                 <div className="flex gap-6 justify-start">
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                   >
                     <AiFillGithub className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                   >
                     <BsFacebook className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                   >
                     <AiFillInstagram className=" text-lg" />
                   </a>
                   <a
                     href="#"
-                    className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                    className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                   >
                     <SiNetlify className=" text-lg" />
                   </a>
@@ -184,7 +184,7 @@ const Contact = () => {
         <h1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="ipad text-center"
+          className="ipad text-center text-breathe"
         >
           Get in touch
         </h1>
@@ -215,11 +215,11 @@ const Contact = () => {
                   Contact me directly :
                 </h1>
                 <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-start">
-                  <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
+                  <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                   +47 333 78 901
                 </p>
                 <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
-                  <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
+                  <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                   american@gmail.com
                 </p>
               </div>
@@ -231,25 +231,25 @@ const Contact = () => {
               <div className="flex gap-5 justify-start">
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillGithub className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <BsFacebook className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillInstagram className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <SiNetlify className=" text-lg" />
                 </a>
@@ -294,7 +294,7 @@ const Contact = () => {
               </div>
               <button
                 onClick={() => setShow(!show)}
-                className=" form-btn duration-500 text-gray-50 rounded-md font-bold font-sans py-3"
+                className="form-btn duration-500 text-white rounded-md font-bold font-sans py-3"
               >
                 Submit
               </button>
@@ -308,7 +308,7 @@ const Contact = () => {
         <h1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="ph mx-5 text-center"
+          className="ph mx-5 text-center text-breathe"
         >
           Get in touch
         </h1>
@@ -348,7 +348,7 @@ const Contact = () => {
             </div>
             <button
               onClick={() => setShow(!show)}
-              className=" form-btn duration-500 text-gray-50 rounded-md font-bold font-sans px-8 py-3"
+              className="form-btn duration-500 text-white rounded-md font-bold font-sans px-8 py-3"
             >
               Submit
             </button>
@@ -375,11 +375,11 @@ const Contact = () => {
                 </h1>
                 <div className="flex flex-col gap-1">
                   <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 items-center justify-center">
-                    <BsFillPhoneVibrateFill className=" text-lg text-pink-500" />{" "}
+                    <BsFillPhoneVibrateFill className=" text-lg text-yellow-500" />{" "}
                     +47 333 78 901
                   </p>
                   <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-center items-center">
-                    <MdMarkEmailRead className=" text-lg text-pink-500" />{" "}
+                    <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
                     american@gmail.com
                   </p>
                 </div>
@@ -392,25 +392,25 @@ const Contact = () => {
               <div className="flex gap-6 justify-center">
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillGithub className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <BsFacebook className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <AiFillInstagram className=" text-lg" />
                 </a>
                 <a
                   href="#"
-                  className=" w-8 h-8 rounded-full form-btn duration-500 text-gray-50 flex justify-center items-center"
+                  className=" w-8 h-8 rounded-full form-btn duration-500 text-white flex justify-center items-center"
                 >
                   <SiNetlify className=" text-lg" />
                 </a>
