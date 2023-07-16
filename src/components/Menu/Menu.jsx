@@ -200,7 +200,7 @@ const Menu = () => {
                     className={`${
                       active == 3 && "selected"
                     }  btn w-10 parentMenu h-10 bg-black rounded-[50%] flex justify-center items-center`}>
-                    <AiOutlineMail
+                    <AiFillFolderOpen
                       className={`${
                         toogle == true && "md:inner lg:inner innerS"
                       } text-2xl parentMenu  text-cyan-600 back-shadow2`}
@@ -208,7 +208,7 @@ const Menu = () => {
                   </div>
                   <p
                     className={`text-cyan-600 childMenu  absolute bottom-[50%] left-[-158%] md:bottom-[50%] md:left-[-110%] lg:bottom-[50%] lg:left-[-110%] md:inner lg:inner innerS`}>
-                    Contact
+                    Skill
                   </p>
                 </div>
               </li>
@@ -239,7 +239,7 @@ const Menu = () => {
                   </div>
                   <p
                     className={`text-cyan-600 childMenu  absolute top-[27%] left-[-100%] md:top-[27%] md:left-[-71%] lg:top-[27%] lg:left-[-71%] md:inner lg:inner textrotateSkill `}>
-                    skill
+                    Projects
                   </p>
                 </div>
               </li>
@@ -261,7 +261,7 @@ const Menu = () => {
                     className={`${
                       active == 5 && "selected"
                     } btn w-10 parentMenu h-10 bg-black rounded-[50%] flex justify-center items-center`}>
-                    <AiFillFolderOpen
+                    <AiOutlineMail
                       style={{ "--i": 6 }}
                       className={`${
                         toogle == true && "md:inner lg:inner innerSpecify"
@@ -270,7 +270,7 @@ const Menu = () => {
                   </div>
                   <p
                     className={`text-cyan-600 childMenu absolute top-[16%] left-[-154%] lg:top-[100%] lg:left-[-30%]  md:top-[100%] md:left-[-30%] md:inner lg:inner innerSpecify`}>
-                    Projects
+                    Contacts
                   </p>
                 </div>
               </li>
