@@ -146,7 +146,7 @@ const Navbar = () => {
           onClick={() => dispatch(setMenu(!menuBarger))}
           className={`px-4 block  lg:hidden md:hidden transition2s shadowBox py-4 rounded`}>
           <div>
-            <CgMenuRight className=" inline text-3xl text-rose-400 text-shadow" />
+            <CgMenuRight className=" inline hover:text-rose-800 text-3xl text-rose-400 text-shadow" />
           </div>
         </div>
       </div>
