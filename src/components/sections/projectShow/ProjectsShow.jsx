@@ -84,7 +84,7 @@ const ProjectsShow = () => {
   ];
   return (
     <>
-      <div className=" py-10 mb-28 font-sans">
+      <div className=" py-10 mb-20 font-sans">
         {/* title */}
         <div
           data-aos="zoom-in"

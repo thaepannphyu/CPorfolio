@@ -11,7 +11,7 @@ AOS.init();
 
 const Skill = () => {
   return (
-    <div className=" py-8 font-sans w-[96%] mx-auto ">
+    <div className=" py-14 font-sans w-[96%] mx-auto ">
       <h1
         data-aos="zoom-in"
         data-aos-duration="1000"

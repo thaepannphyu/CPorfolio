@@ -7,7 +7,7 @@ AOS.init();
 
 const Education = () => {
   return (
-    <div className=" font-sans w-[90%] my-10 mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%]">
+    <div className=" font-sans w-[90%] py-20 mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%]">
       <div
         data-aos="fade-up"
         data-aos-duration="3000"

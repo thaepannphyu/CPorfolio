@@ -11,7 +11,7 @@ AOS.init();
 const About = () => {
   return (
     <div>
-        <div className=' flex justify-center pt-20 pb-28 font-sans '>
+        <div className=' flex justify-center py-20 font-sans '>
         <div className=' w-[90%] mx-10 flex max-md:flex-col justify-between items-center max-xl:gap-10'>
             {/* image div  */}
             <div

@@ -20,11 +20,7 @@ const Contact = () => {
   return (
     <>
       {/* laptop view */}
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        className="flex w-[100%] relative bg-gray-200 dark:bg-[rgb(20,20,20)] max-[899px]:hidden"
-      >
+      <div className="flex w-[100%] relative bg-gray-200 dark:bg-[rgb(20,20,20)] max-[899px]:hidden">
         {/* left side */}
         <div
           className={`${
@@ -344,7 +340,9 @@ const Contact = () => {
                 autoComplete="off"
                 placeholder=" "
               />
-              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">Name</label>
+              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">
+                Name
+              </label>
             </div>
             <div className="form1">
               <input
@@ -353,7 +351,9 @@ const Contact = () => {
                 autoComplete="off"
                 placeholder=" "
               />
-              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">Email</label>
+              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">
+                Email
+              </label>
             </div>
             <div className="form2">
               <textarea
@@ -363,7 +363,9 @@ const Contact = () => {
                 cols="30"
                 rows="5"
               ></textarea>
-              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">Message</label>
+              <label className="label1 text-black dark:text-white bg-gray-100 dark:bg-[rgb(24,24,24)]">
+                Message
+              </label>
             </div>
             <button
               onClick={() => setShow(!show)}
