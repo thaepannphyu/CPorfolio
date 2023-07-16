@@ -104,7 +104,7 @@ const ProjectsShow = () => {
         <div className=" mt-8 mx-10 max-[525px]:hidden">
           <Swiper
             slidesPerView={3}
-            spaceBetween={23}
+            spaceBetween={40}
             centeredSlides={true}
             grabCursor={true}
             loop={true}
@@ -117,6 +117,11 @@ const ProjectsShow = () => {
               },
               900: {
                 slidesPerView: 3,
+                spaceBetween: 40
+              },
+              1115: {
+                slidesPerView: 3,
+                spaceBetween: 30
               },
             }}
             // pagination={{
@@ -129,12 +134,12 @@ const ProjectsShow = () => {
               disableOnInteraction: false,
             }}
             initialSlide={2}
-            className="mySwiper w-[100%] py-12 pl-5 max-[600px]:pr-5 max-[600px]:pl-10 ">
+            className="mySwiper w-[100%] py-12 pl-5 max-[600px]:pr-1 max-[600px]:pl-[80px] ">
             {pj.map((pj) => {
               return (
                 <div key={pj.id}>
                   <SwiperSlide>
-                    <div className="card w-[95%] rounded-md overflow-hidden">
+                    <div className="card w-[90%] min-[1115px]:w-[93%] min-[900px]:w-[94%] max-[600px]:w-[80%] rounded-md overflow-hidden">
                       <div className="card-body w-full relative cursor-pointer">
                         <img src={pj.img} alt="" className=" " />
                         <div className="layer absolute ">

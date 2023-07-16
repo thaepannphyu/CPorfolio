@@ -77,8 +77,22 @@
 
 /* slide active  */
 .swiper-slide-active .card{
-    transform: scale(1.2) !important;
+    transform: scale(1.4) !important;
   }
+
+@media screen and (min-width:1115px) {
+    .swiper-slide-active .card{
+        transform: scale(1.3) !important;
+      }
+     
+}
+
+@media screen and (max-width:900px) {
+    .swiper-slide-active .card{
+        transform: scale(1.4) !important;
+      }
+     
+}
 
 /* navigation  */
 .swiper-button-prev,

@@ -16,13 +16,13 @@ const App = () => {
     // bg-[rgb(206,205,194)]  bg-[rgb(24,24,24)]
 
 
-    <div className=" relative bg-[rgb(24,24,24)] ">
+    <div className=" relative bg-[rgb(17,17,17)] ">
       {/* <Navbar /> */}
 
     
 
-      {/* <Menu /> */}
-      {/* <section id="0" className=" relative">
+      <Menu />
+      <section id="0" className=" relative">
         <Landing />
       </section>
 
@@ -32,7 +32,7 @@ const App = () => {
 
       <section id="2" className=" relative">
         <Education />
-      </section> */}
+      </section>
 
       <section id="3" className=" relative">
         <Skill />
