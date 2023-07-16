@@ -93,7 +93,7 @@ const ProjectsShow = () => {
           <h1 className=" text-3xl font-bold tracking-wider text-[#00ffff]">
             Recent <span className=" text-[#FFFF00]">Projects</span>
           </h1>
-          <p className=" text-pink-500 mt-1 w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
+          <p className="  dark:text-pink-500 text-black mt-1 w-[500px] max-[600px]:w-full max-[600px]:px-8 text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
             doloremque voluptate excepturi porro sed totam quis animi dolorum
             rerum earum.
