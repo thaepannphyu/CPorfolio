@@ -54,7 +54,7 @@
     /* margin-left: 0%; */
   }
   .transition2s {
-    transition: 1s;
+    transition: 0.5s;
   }
   /* .shadowChrome {
     text-shadow: 20px 40px 24px rgba(120, 120, 245, 0.25) 0px 50px 100px -20px,
