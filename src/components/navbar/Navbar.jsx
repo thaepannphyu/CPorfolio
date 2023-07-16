@@ -15,7 +15,7 @@ const Navbar = () => {
   // window.addEventListener("scroll", scrollHandler);
 
   return (
-    <div className="z-40 py-4 ">
+    <div className="z-40 py-4 absolute top-0 left-0 right-0 ">
       {/* logo */}
       <div className=" container mx-auto flex justify-between items-center gap-10 bg-transparent">
         <NavHashLink
