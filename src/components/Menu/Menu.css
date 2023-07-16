@@ -19,11 +19,10 @@
   /* border-style: dashed; */
   /* border-color: blue !important; */
 }
-.btn:hover {
-  background-color: #c029f03d !important;
-  /* box-shadow: 20px 14px -6px #c029f0a3; */
-}
 
+.btn {
+  background-color: #c029f03d;
+}
 /* .dragend .handle::after {
   content: "";
   position: absolute;

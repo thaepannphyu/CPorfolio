@@ -84,9 +84,6 @@ body {
   background-size: cover;
 }
 
-.bgTransparent {
-  background-color: #ffffff14;
-}
 .cursiveText {
   font-family: var(--font-family);
 }
