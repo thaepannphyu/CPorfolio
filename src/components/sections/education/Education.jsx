@@ -12,7 +12,7 @@ const Education = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%] mb-10 ">
-        <h2 className=" uppercase text-center md:text-left text-2xl font-bold tracking-widest mb-4 text-[#58bdbd] dark:text-[#00ffff]">
+        <h2 className=" uppercase text-center md:text-left text-2xl font-bold tracking-widest mb-4 text-[#2d9494] dark:text-[#00ffff] pb-5">
           Education
         </h2>
         <Timeline className=" text-pink-500" color="indigo" active={4}>
@@ -50,7 +50,7 @@ const Education = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%]">
-        <h2 className=" uppercase text-center md:text-left text-2xl font-semibold tracking-widest mb-4 text-[#c5d664] dark:text-[#e1f85b]">
+        <h2 className=" uppercase text-center md:text-left text-2xl font-semibold tracking-widest mb-4 text-[#8a9b29] dark:text-[#e1f85b] py-5">
           Experience
         </h2>
         <Timeline color="indigo" active={3}>
