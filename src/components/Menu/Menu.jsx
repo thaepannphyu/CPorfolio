@@ -28,7 +28,7 @@ const Menu = () => {
 
   const scrollHandler = () => {
     setScroll(window.scrollY);
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
   };
   window.addEventListener("scroll", scrollHandler);
 

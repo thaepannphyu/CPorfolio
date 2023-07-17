@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   value: 0,
   menuBarger: false,
+  theme: localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
 };
 
 export const NavLinkSlice = createSlice({
@@ -19,10 +20,13 @@ export const NavLinkSlice = createSlice({
     setMenu: (state, { payload }) => {
       state.menuBarger = payload;
     },
+    setTheme: (state, { payload }) => {
+      state.theme = payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setActive, setMenu } = NavLinkSlice.actions;
+export const { setActive, setMenu, setTheme } = NavLinkSlice.actions;
 
 export default NavLinkSlice.reducer;
