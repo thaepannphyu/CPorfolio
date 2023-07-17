@@ -146,7 +146,7 @@ const Navbar = () => {
           data-aos="fade-down-left"
           data-aos-duration="1200"
           onClick={() => dispatch(setMenu(!menuBarger))}
-          className={`px-4 block bg-violet-50 dark:bg-transparent  lg:hidden md:hidden transition2s shadowBox py-4 rounded`}>
+          className={`px-4 block bg-violet-50 dark:bg-transparent  lg:hidden md:hidden transition2s shadowBox py-4 rounded cursor-pointer`}>
           <div>
             <CgMenuRight className=" inline hover:text-rose-800 text-3xl text-rose-400 text-shadow" />
           </div>

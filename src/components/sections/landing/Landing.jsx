@@ -62,7 +62,7 @@ const Landing = () => {
                 className="text-pink-500 shadowChrome h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
                 Hello! I am{" "}
                 <strong className=" text-yellow-500 shadowChrome">
-                  Khine Zin Thin
+                  Sakura Jung
                 </strong>
                 <div className=" inline h1C">
                   <IoArrowUndoOutline className=" inline h1C" />
