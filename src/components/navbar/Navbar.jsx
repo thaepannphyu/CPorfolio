@@ -18,9 +18,7 @@ const Navbar = () => {
   const menuBarger = useSelector((state) => state.NavLink.menuBarger);
   // console.log(menuBarger);
   return (
-
     <div>
-
       {/* logo */}
       <div className=" container  mx-auto flex justify-between items-center gap-10 ">
         <NavHashLink

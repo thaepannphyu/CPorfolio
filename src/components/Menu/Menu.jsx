@@ -47,6 +47,28 @@ const Menu = () => {
   window.addEventListener("resize", setPosition);
   const menuBarger = useSelector((state) => state.NavLink.menuBarger);
   // console.log(scroll > 50 || menuBarger == true);
+  // useEffect(() => {
+  //   // console.log(scroll);
+  //   if (0 > scroll / 600) {
+  //     dispatch(setActive(0));
+  //   }
+  //   if (0 < scroll / 600 < 1) {
+  //     dispatch(setActive(1));
+  //   }
+  //   if (1 < scroll / 600 < 2) {
+  //     dispatch(setActive(2));
+  //   }
+  //   if (2 < scroll / 600 < 3) {
+  //     dispatch(setActive(3));
+  //   }
+  //   if (3 < scroll / 600 < 4) {
+  //     dispatch(setActive(4));
+  //   }
+  //   if (4 < scroll / 600 < 5) {
+  //     dispatch(setActive(5));
+  //   }
+  //   console.log(0 > scroll / 600);
+  // }, [scroll]);
   return (
     <Draggable
       axis="y"
