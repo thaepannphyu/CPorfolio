@@ -1,5 +1,5 @@
 import React from 'react'
-import kzt from "../../../assets/kzt/portfolio3.svg";
+import kzt from "../../../assets/kzt/portfolio4.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
