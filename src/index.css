@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   .liS {
     left: -20px;
@@ -9,6 +10,7 @@
     transform-origin: 100px;
     transform: rotate(0deg) translateX(100px);
   }
+
   .li {
     transform-origin: 100px;
     transition: 1s;

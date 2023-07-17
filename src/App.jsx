@@ -18,8 +18,8 @@ const App = () => {
     <div className=" relative bg-gray-100 dark:bg-[rgb(24,24,24)] ">
       {/* <Navbar /> */}
 
-      <Menu />
-      <section id="0" className=" relative">
+      {/* <Menu /> */}
+      <section id="0" className=" relative ">
         <Landing />
       </section>
 

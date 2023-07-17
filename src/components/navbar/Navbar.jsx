@@ -19,7 +19,9 @@ const Navbar = () => {
   // console.log(menuBarger);
   return (
 
+
     <div className=" max-md:pt-3">
+
 
       {/* logo */}
       <div className=" container  mx-auto flex justify-between items-center gap-10 ">

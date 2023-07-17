@@ -21,8 +21,8 @@ const Landing = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        ` <p className="pC">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>`,
-        ` <p className="pC">Qurrncard elit.</p>`,
+        ` <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>`,
+        ` <p className="">Qurrncard elit.</p>`,
       ],
       typeSpeed: 20,
       backDelay: 700,
@@ -44,7 +44,7 @@ const Landing = () => {
         id="myVideo"></video> */}
       <Navbar />
 
-      <div className="   overflow-hidden  h-screen flex  justify-center items-center  relative ">
+      <div className="   overflow-hidden   flex  justify-center items-center  relative ">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
@@ -53,15 +53,15 @@ const Landing = () => {
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
 
         {/*  */}
-        <div className=" shadow dark:shadow-none  dark:bg-transparent container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap">
+        <div className="  shadow dark:shadow-none  dark:bg-transparent container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
             <div className=" p-4 overflow-hidden flex justify-center items-center flex-col">
               <div
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className="text-pink-500 shadowChrome h2C hover:scale-110 transition2s cursiveText hover:text-blue-200">
+                className="text-pink-500 shadowChrome text-4xl max-lg:text-3xl hover:scale-110 transition2s cursiveText hover:text-blue-200">
                 Hello! I am{" "}
-                <strong className=" text-yellow-500 shadowChrome">
+                <strong className=" text-yellow-500 text-4xl max-lg:text-3xl shadowChrome">
                   Sakura Jung
                 </strong>
                 <div className=" inline h1C">

@@ -33,7 +33,6 @@ const Contact = () => {
             alt=""
             className=" h-[600px] w-full object-cover"
           />
-
           <p
             className={`${
               show
