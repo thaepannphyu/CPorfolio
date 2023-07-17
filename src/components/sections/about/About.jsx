@@ -30,7 +30,7 @@ const About = () => {
             className=' w-[60%] max-md:w-[90%] flex  max-md:justify-center flex-col gap-3 '>
                 <h1 className=' max-md:text-center text-4xl max-lg:text-3xl font-bold text-[#ca1a95]'>ABOUT ME</h1>
                 <p className=' max-md:text-center text-xl dark:text-[#e0f75b] text-blue-700'>Frontend Developer</p>
-                <p className=' max-md:text-center text-lg dark:text-[#4c6ef4] text-black'>
+                <p className=' max-md:text-center break-all text-lg dark:text-[#4c6ef4] text-black max-[450px]:text-sm'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ea est quibusdam architecto odio quos sunt, debitis ipsum rerum perferendis ipsam. Perspiciatis reiciendis voluptatum, consectetur dolores delectus repudiandae ex nobis.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente iste, quos fugiat illum eligendi dicta necessitatibus. Distinctio a necessitatibus, dolorum commodi iusto pariatur nihil aliquam eum fugiat vel, impedit ullam!
                 </p>

@@ -18,7 +18,11 @@ const Navbar = () => {
   const menuBarger = useSelector((state) => state.NavLink.menuBarger);
   // console.log(menuBarger);
   return (
-    <div>
+
+
+    <div className=" max-md:pt-3">
+
+
       {/* logo */}
       <div className=" container  mx-auto flex justify-between items-center gap-10 ">
         <NavHashLink
@@ -35,8 +39,8 @@ const Navbar = () => {
               <p
                 className={`${
                   active == 0 && ""
-                } btnNav  rounded-3xl text-black dark:text-white flex justify-center items-center  px-4 h-10`}>
-                Logo
+                }logo-bg rounded-3xl text-black text-2xl max-[500px]:text-xl max-[300px]:text-base tracking-wide dark:text-[#FD23D2] flex justify-center items-center  px-4 h-10 logo-text italic  `}>
+                My Portfolio
               </p>
             </div>
             <DarkMode />

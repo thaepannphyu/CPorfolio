@@ -14,7 +14,7 @@ const Skill = () => {
     <div className=" py-14 font-sans w-[96%] mx-auto ">
       <h1
         data-aos="zoom-in"
-        data-aos-duration="1000"
+        data-aos-duration="2000"
         className=" text-center text-white uppercase font-bold tracking-widest text-2xl">
         <span className=" text-[#2d9494] dark:text-[#00ffff] skill">Skills</span>
         <span className="text-pink-500 and"> & </span>

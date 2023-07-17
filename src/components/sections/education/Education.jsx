@@ -10,7 +10,7 @@ const Education = () => {
     <div className=" font-sans w-[90%] py-20 mx-auto flex flex-col md:flex-row lg:flex-row gap-[10%]">
       <div
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%] mb-10 ">
         <h2 className=" uppercase text-center md:text-left text-2xl font-bold tracking-widest mb-4 text-[#2d9494] dark:text-[#00ffff] pb-5 skill">
           Education
@@ -48,7 +48,7 @@ const Education = () => {
         // data-aos-offset="300"
         // data-aos-easing="ease-in-sine"
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         className=" px-5 w-full md:w-[40%] lg:w-[40%]">
         <h2 className=" uppercase text-center md:text-left text-2xl font-semibold tracking-widest mb-4 text-[#8a9b29] dark:text-[#e1f85b] pb-5 technology">
           Experience
