@@ -2,6 +2,10 @@
   background-color: #c029f03d !important;
   box-shadow: 20px 14px -6px #c029f0a3;
 }
+.logo-bg {
+  background-color: #c029f03d !important;
+  box-shadow: 20px 14px -6px #c029f0a3;
+}
 .btn .selected {
   border: 2px solid #c029f03d;
   background-color: aqua;

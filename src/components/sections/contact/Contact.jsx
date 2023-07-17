@@ -184,7 +184,7 @@ const Contact = () => {
       <div className="flex flex-col justify-center max-[599px]:hidden min-[900px]:hidden">
         <h1
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           className="ipad text-center">
           Get in touch
         </h1>
@@ -192,7 +192,7 @@ const Contact = () => {
           {/* information  */}
           <div
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="2000"
             className="flex flex-col mx-4 gap-4">
             <h1 className="font-sans text-3xl tracking-wider text-yellow-500 font-medium">
               Portfolio
@@ -305,14 +305,14 @@ const Contact = () => {
       <div className=" w-full mb-10 min-[600px]:hidden flex flex-col gap-10">
         <h1
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           className="ph mx-5 text-center">
           Get in touch
         </h1>
         <form className="w-full py-7 flex items-center justify-center">
           <div
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="2000"
             className={`flex flex-col mx-4 gap-7`}>
             <div className="form1">
               <input
