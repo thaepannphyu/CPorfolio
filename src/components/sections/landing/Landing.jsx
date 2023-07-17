@@ -24,7 +24,7 @@ const Landing = () => {
         ` <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>`,
         ` <p className="">Qurrncard elit.</p>`,
       ],
-      typeSpeed: 20,
+      typeSpeed: 80,
       backDelay: 700,
       loop: true,
     });
@@ -35,7 +35,7 @@ const Landing = () => {
   }, []);
   // https://www.youtube.com/watch?v=VvMVTH1yOjo
   return (
-    <>
+    <div className=" ">
       {/* <video
         src="https://www.youtube.com/watch?v=VvMVTH1yOjo"
         autoPlay
@@ -44,7 +44,7 @@ const Landing = () => {
         id="myVideo"></video> */}
       <Navbar />
 
-      <div className="   overflow-hidden   flex  justify-center items-center  relative ">
+      <div className=" h-[600px] flex  justify-center items-center  relative ">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>
@@ -53,7 +53,7 @@ const Landing = () => {
           src="https://embed.lottiefiles.com/animation/7393"></iframe> */}
 
         {/*  */}
-        <div className="  shadow dark:shadow-none  dark:bg-transparent container text-white md:h-[90%] lg:h-[80%] flex justify-center flex-wrap">
+        <div className="  dark:shadow-none  dark:bg-transparent container text-white md:h-[90%] lg:h-[90%] flex justify-center flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/2  flex justify-center items-center">
             <div className=" p-4 overflow-hidden flex justify-center items-center flex-col">
               <div
@@ -211,7 +211,7 @@ const Landing = () => {
           <img src={cv} alt="" />
         </div>
       </Modal>
-    </>
+    </div>
   );
 };
 
