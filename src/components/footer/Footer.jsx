@@ -6,7 +6,7 @@ const Footer = () => {
     <div className=' relative'>
       <BackToTop/>
       <div className=' text-center py-8 font-sans bg-img1'>
-        <h1 className=' text-white text-lg'>Copyright &copy; 2023 team C . All rights reserved</h1>
+        <h1 className=' dark:text-white text-black text-lg'>Copyright &copy; 2023 team C . All rights reserved</h1>
       </div>
     </div>
   )
