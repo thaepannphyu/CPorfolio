@@ -16,9 +16,9 @@ const Skill = () => {
         data-aos="zoom-in"
         data-aos-duration="1000"
         className=" text-center text-white uppercase font-bold tracking-widest text-2xl">
-        <span className=" text-[#58bdbd] dark:text-[#00ffff] skill">Skills</span>
+        <span className=" text-[#2d9494] dark:text-[#00ffff] skill">Skills</span>
         <span className="text-pink-500 and"> & </span>
-        <span className=" text-[#c5d664] dark:text-[#e1f85b] technology">Technologies</span>
+        <span className=" text-[#8a9b29] dark:text-[#e1f85b] technology">Technologies</span>
       </h1>
       {/* skills showcase  */}
       <div class="flex flex-wrap justify-center mt-24">
