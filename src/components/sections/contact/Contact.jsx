@@ -123,7 +123,7 @@ const Contact = () => {
                     </p>
                     <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
                       <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
-                      american@gmail.com
+                      portfolio@gmail.com
                     </p>
                   </div>
                 </div>
@@ -180,11 +180,11 @@ const Contact = () => {
       </div>
 
       {/* ipad view  */}
-      <div className="flex flex-col justify-center max-[599px]:hidden min-[900px]:hidden select-none">
+      <div className="flex flex-col justify-center max-[599px]:hidden min-[900px]:hidden select-none overflow-hidden">
         <h1
           data-aos="zoom-in"
           data-aos-duration="2000"
-          className="ipad text-center">
+          className="ipad text-center text-breathe">
           Get in touch
         </h1>
         <div className={`flex items-center justify-around h-[500px]`}>
@@ -218,7 +218,7 @@ const Contact = () => {
                 </p>
                 <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-start items-center">
                   <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
-                  american@gmail.com
+                  portfolio@gmail.com
                 </p>
               </div>
             </div>
@@ -301,11 +301,11 @@ const Contact = () => {
       </div>
 
       {/* phone view */}
-      <div className=" w-full mb-10 min-[600px]:hidden flex flex-col gap-10 select-none">
+      <div className=" w-full mb-10 min-[600px]:hidden flex flex-col gap-10 select-none overflow-hidden">
         <h1
           data-aos="zoom-in"
           data-aos-duration="2000"
-          className="ph mx-5 text-center">
+          className="ph mx-5 text-center text-breathe">
           Get in touch
         </h1>
         <form className="w-full py-7 flex items-center justify-center">
@@ -379,7 +379,7 @@ const Contact = () => {
                   </p>
                   <p className=" text-pink-500 font-sans tracking-wider text-sm flex gap-2 justify-center items-center">
                     <MdMarkEmailRead className=" text-lg text-yellow-500" />{" "}
-                    american@gmail.com
+                    portfolio@gmail.com
                   </p>
                 </div>
               </div>
