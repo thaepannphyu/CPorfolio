@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <>
       {/* laptop view */}
-      <div className="flex w-[100%] relative bg-gray-200 dark:bg-[rgb(20,20,20)] max-[899px]:hidden">
+      <div className="flex w-[100%] relative bg-gray-200 dark:bg-[rgb(20,20,20)] max-[899px]:hidden select-none">
         {/* left side */}
         <div
           className={`${
@@ -180,7 +180,7 @@ const Contact = () => {
       </div>
 
       {/* ipad view  */}
-      <div className="flex flex-col justify-center max-[599px]:hidden min-[900px]:hidden">
+      <div className="flex flex-col justify-center max-[599px]:hidden min-[900px]:hidden select-none">
         <h1
           data-aos="zoom-in"
           data-aos-duration="2000"
@@ -301,7 +301,7 @@ const Contact = () => {
       </div>
 
       {/* phone view */}
-      <div className=" w-full mb-10 min-[600px]:hidden flex flex-col gap-10">
+      <div className=" w-full mb-10 min-[600px]:hidden flex flex-col gap-10 select-none">
         <h1
           data-aos="zoom-in"
           data-aos-duration="2000"

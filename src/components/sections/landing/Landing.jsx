@@ -44,7 +44,7 @@ const Landing = () => {
         id="myVideo"></video> */}
       <Navbar />
 
-      <div className=" h-[600px] flex  justify-center items-center  relative ">
+      <div className=" h-[600px] flex  justify-center items-center  relative select-none">
         {/* <iframe
           className={` absolute top-10 right-0 duration-75`}
           src="https://embed.lottiefiles.com/animation/83977"></iframe>

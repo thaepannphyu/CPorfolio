@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineHtml5, AiOutlineGithub } from "react-icons/ai";
 import { TbBrandCss3, TbBrandVscode } from "react-icons/tb";
 import { FaSass, FaBootstrap, FaReact } from "react-icons/fa";
-import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoJavascript } from "react-icons/bi"; 
 import { SiRedux, SiTailwindcss } from "react-icons/si";
 import "./skill.css";
 import AOS from "aos";
@@ -15,9 +15,9 @@ const Skill = () => {
       <h1
         data-aos="zoom-in"
         data-aos-duration="2000"
-        className=" text-center text-white uppercase font-bold tracking-widest text-2xl">
+        className=" select-none text-center text-white uppercase font-bold tracking-widest text-2xl">
         <span className=" text-[#2d9494] dark:text-[#00ffff] skill">Skills</span>
-        <span className="text-pink-500 and"> & </span>
+        <span className=" text-pink-500 and"> & </span>
         <span className=" text-[#8a9b29] dark:text-[#e1f85b] technology">Technologies</span>
       </h1>
       {/* skills showcase  */}
@@ -34,17 +34,17 @@ const Skill = () => {
               <AiOutlineHtml5 />
             </p>
             <div className=" card-background card-background1 shadow-md shadow-[#ff8800] bg-white bg-opacity-10 border-b border-[#cc4a2a] p-8 -mt-5 rounded-lg">
-              <h2 className=" font-semibold tracking-widest flex justify-center items-center text-slate-500 dark:text-white back-shadow1">
+              <h2 className="select-none font-semibold tracking-widest flex justify-center items-center text-slate-500 dark:text-white back-shadow1">
                 HTML SKILL
               </h2>
               <div class="flex flex-col justify-between flex-grow">
-                <p class=" leading-relaxed text-base text-slate-700 dark:text-white mx-3 mt-3 tracking-wider ">
+                <p class="select-none leading-relaxed text-base text-slate-700 dark:text-white mx-3 mt-3 tracking-wider ">
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                   taxidermy. Gastropub indxgo juice poutine.
                 </p>
               </div>
               <div className=" mt-8 relative">
-                <p className=" text-[11px] absolute -top-5 right-2 text-slate-500 dark:text-white back-shadow1">
+                <p className="select-none text-[11px] absolute -top-5 right-2 text-slate-500 dark:text-white back-shadow1">
                   90%
                 </p>
                 <div className=" bg-slate-800 bg-opacity-20 rounded w-full h-[5px] ">
@@ -62,21 +62,21 @@ const Skill = () => {
           data-aos-duration="2000"
           class="px-4 max-w-sm group mb-16">
           <div class="flex h-full p-8 flex-col relative">
-            <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-600 group-hover:scale-110 transition-all ease-in-out delay-150">
+            <p className="select-none absolute -top-8 right-[40%] text-[60px] text-blue-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <TbBrandCss3 />
             </p>
             <div className=" card-background card-background2 shadow-md shadow-[#002fff] bg-white bg-opacity-10 border-b border-[#2a63cc] p-8 -mt-5 rounded-lg">
-              <h2 className=" font-semibold tracking-widest flex justify-center items-center text-slate-500 dark:text-white back-shadow2">
+              <h2 className="select-none font-semibold tracking-widest flex justify-center items-center text-slate-500 dark:text-white back-shadow2">
                 CSS SKILL
               </h2>
               <div class="flex flex-col justify-between flex-grow">
-                <p class=" leading-relaxed text-base text-slate-500 dark:text-white mx-3 mt-3 tracking-wider ">
+                <p class="select-none leading-relaxed text-base text-slate-500 dark:text-white mx-3 mt-3 tracking-wider ">
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                   taxidermy. Gastropub indxgo juice poutine.
                 </p>
               </div>
               <div className=" mt-8 relative">
-                <p className=" text-[11px] absolute -top-5 right-8 text-slate-500 dark:text-white back-shadow2">
+                <p className="select-none text-[11px] absolute -top-5 right-8 text-slate-500 dark:text-white back-shadow2">
                   80%
                 </p>
                 <div className=" bg-slate-800 bg-opacity-20 rounded w-full h-[5px] ">
@@ -92,7 +92,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-pink-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <FaSass />
@@ -124,7 +124,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-yellow-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <BiLogoJavascript />
@@ -156,7 +156,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-purple-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <FaBootstrap />
@@ -188,7 +188,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-400 group-hover:scale-110 transition-all ease-in-out delay-150">
               <FaReact />
@@ -220,7 +220,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-purple-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <SiRedux />
@@ -253,7 +253,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-600 group-hover:scale-110 transition-all ease-in-out delay-150">
               <SiTailwindcss />
@@ -285,7 +285,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group mb-16">
+          class="px-4 max-w-sm group mb-16 select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-gray-900 dark:text-slate-400 group-hover:scale-110 transition-all ease-in-out delay-150">
               <AiOutlineGithub />
@@ -317,7 +317,7 @@ const Skill = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          class="px-4 max-w-sm group ">
+          class="px-4 max-w-sm group select-none">
           <div class="flex h-full p-8 flex-col relative">
             <p className=" absolute -top-8 right-[40%] text-[60px] text-blue-500 group-hover:scale-110 transition-all ease-in-out delay-150">
               <TbBrandVscode />
